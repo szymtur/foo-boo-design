@@ -10,14 +10,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function insertData() {
-   let thumbnails = document.querySelectorAll('#main-section figure');
    let icons = document.querySelectorAll('#main-section .icon');
    let title = document.querySelectorAll('.title');
    let description = document.querySelectorAll('#main-section .description');
    let buttons = document.querySelectorAll('#main-section a');
    
    for (let i=0; i<buttons.length; i++) {
-      thumbnails[i].style.display='none';    //hiding svg graphics
       icons[i].classList.add(data[i].icon);
       title[i].innerText = data[i].title;
       description[i].innerText = data[i].description;

@@ -12,7 +12,7 @@ module.exports = env => {
     entry: './js/app.js',
     output: {
       filename: isDev ? "js/[name].js" : "js/[name].js",
-      path: path.resolve(__dirname, "build")
+      path: path.resolve(__dirname, "docs")
     },
     watch: true,
     mode: isProd ? "production" : "development",
@@ -117,7 +117,7 @@ module.exports = env => {
       new MiniCssExtractPlugin({
         filename: "css/[name].css",
       }),
-      new Clean(['build'])
+      new Clean(['docs'])
     )
   }
 
