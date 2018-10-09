@@ -1,0 +1,88 @@
+#main-header{
+    position: relative;
+    height: 15vh;
+    background: $header-bg-color;
+
+    figure.logo {
+        @include image('../images/fooboo_logo.svg');
+        position: absolute;
+        height: 5vw;
+        width: 9vw;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .main-nav{
+        position: absolute;
+        bottom: 0;  
+        right: 14%;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            text-align: right;
+       
+            & > li {
+                // border: 1px solid red;
+                height: 3vw;
+                display: flex;
+                align-items: center;
+                padding-left: 1vw;
+                padding-right: 1vw;
+                transition: all 0.5s;
+                
+                &:hover {
+                    background: $nav-hover-bg-color;
+                }
+
+                .fas {
+                    margin-left: 0.5vw;
+                }
+            }
+
+            li {
+                @include roboto-light;
+                font-size: 1.1vw;
+                cursor: pointer;
+                            
+                a {  
+                    @include roboto-light;
+                    text-decoration: none;
+                    font-size: 1.1vw;
+                    color: $font-color;
+                }
+                
+                ol {
+                    display: none;
+                    width: 14vw;
+                    height: 17vw;
+                    background: $nav-hover-bg-color;
+                    position: absolute;
+                    top: 3vw;
+                    right: 16.9vw;
+                    z-index: 300;
+                    li {
+                        padding: 1vw;
+                        display: block;
+                        text-align: left;
+                        height: 3.2vw;
+                        width: 14vw;
+                        line-height: 1.4vw;
+                        border-bottom: 1px solid $header-bg-color;;
+                        transition: all 0.5s;
+
+                        &:first-child {
+                            margin-top: 1vw;
+                        }
+                        
+                        &:hover {
+                            background: $header-bg-color;
+                        }
+                    }
+                }
+            }        
+        }
+    }
+}
+      
+

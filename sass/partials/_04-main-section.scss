@@ -1,0 +1,120 @@
+#main-section {
+   height: 60vh;
+   background: $main-section-bg-color;
+   color: $main-section-font-color;
+
+   .grid-row {
+      height: 60vh;
+      display: flex;
+      align-items: center;
+
+      .grid-container {
+         height: 55vh;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+         align-items: center;
+         background: $main-section-container-bg-color;
+         text-align: center;
+         overflow: hidden;
+         padding: 1.5vw;
+         
+         .icon {
+            border: 2px solid transparent;
+            border-radius: 50%;
+            width: 8vw;
+            height: 8vw; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .thumbnail {
+            width: 8vw;
+            height: 8vw;         
+         }
+
+         h3 {
+            @include roboto-medium;
+            text-transform: uppercase;
+            height: 1.6vw;
+            width: 115%;
+            overflow: hidden;
+         }
+
+         .text {
+            height: 5.2vw;
+            overflow: hidden;
+         }
+         
+         a {
+            text-transform: lowercase;
+         }
+      }
+
+      .col-3:first-of-type {
+         .thumbnail {
+            @include image('../images/thumb_1.svg');
+         }
+
+         .icon {
+            border-color: $main-section-icon-1-color;
+            color: $main-section-icon-1-color;
+            font-size: 4.5vw;
+         }
+
+         a {
+            @include button($main-section-btn-1-color);
+         }
+      }
+
+      .col-3:nth-of-type(2){ 
+         .thumbnail {
+            @include image('../images/thumb_2.svg');
+         }
+
+         a {
+            @include button($main-section-btn-2-color);
+         }
+
+         .icon {
+            border-color: $main-section-icon-2-color;
+            color: $main-section-icon-2-color;
+            font-size: 4vw;
+            transform: rotate(-45deg);
+         }
+      }
+
+      .col-3:nth-of-type(3){
+         .thumbnail {
+            @include image('../images/thumb_3.svg');
+         }
+ 
+         a {
+            @include button($main-section-btn-3-color);
+         }
+
+         .icon {
+            border-color: $main-section-icon-3-color;
+            color: $main-section-icon-3-color;
+            font-size: 4.5vw;
+         }
+      }
+
+      .col-3:nth-of-type(4){ 
+         .thumbnail {
+            @include image('../images/thumb_4.svg');
+         }
+
+         a {
+            @include button($main-section-btn-4-color);
+         }
+
+         .icon {
+            border-color: $main-section-icon-4-color;
+            color: $main-section-icon-4-color;
+            font-size: 3.5vw;
+         }
+      }
+   }
+}

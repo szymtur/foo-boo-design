@@ -1,0 +1,96 @@
+#bottom-section {
+   height: 60vh;
+   background: $main-section-bg-color;
+   color: $main-section-font-color;
+   font-size: 0.85vw;
+   text-align: justify;
+
+   h5 {
+      @include roboto-light;
+      font-size: 1.1vw;   
+      text-transform: uppercase;
+   }
+
+   h4 {
+      @include roboto-bold;
+      font-size: 1.2vw;
+      text-transform: uppercase;
+      margin-bottom: 1.2vw;
+   }
+
+   span {
+      @include roboto-bold;
+   }
+
+   .left {
+      height: 55vh;
+      background: $main-section-container-bg-color;
+
+      .top.grid-row {
+         height: 50%;
+         
+         figure.grid-row {
+            height: 27.5vh;
+            background-image: url('../images/article_img.jpg');
+            background-size: cover;
+            background-position: center;
+         }
+
+         .description.grid-row {
+            height: 27.5vh;
+            padding-right: 1.5vw;
+            padding-left: 0.5vw; 
+            line-height: 1.3vw;
+            padding-top: 1vw;
+            overflow: hidden;
+         }
+      }
+
+      .bottom.grid-row {
+         padding: 1.5vw;
+         height: 50%;
+         overflow: hidden;   
+      }
+   }
+
+   .right {
+      height: 55vh;
+      padding-top: 0.8vw;
+      padding-left: 0.25vw;
+
+      form {
+         height: 80%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: flex-end;
+
+         input:not([type="submit"]), textarea {
+            padding: 0.5vw;
+            width: 100%;
+            font-size: 0.8vw;
+         }
+
+         input:not([type="submit"]):focus, textarea:focus {
+            border: 1px solid $main-section-font-color;
+            outline: none;           
+         }
+
+         input:not([type="submit"]) {
+            height: 2vw;
+         }
+
+         textarea {
+            @include roboto-regular;
+            height: 8vw;
+            resize: none;
+         }
+
+         input[type="submit"] {
+            @include button($form-button-color);
+            width: 50%;
+            text-transform: uppercase;
+         }
+      }
+   }
+}

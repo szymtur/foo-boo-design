@@ -1,0 +1,48 @@
+@mixin grid($cols) {
+    .grid-container {
+        width: 100%;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .vertical-margins {
+            padding-left: 10%;
+            padding-right: 10%;
+
+            .grid-row {
+                &::after, &::before {
+                    clear: both;
+                    display: block;
+                    content: '';
+                }
+
+                [class*='col-'] {
+                    width: 100%;
+                    float: left;
+                    min-height: 5px;
+                    padding-left: 5px; // gutter
+                    padding-right: 5px; // gutter
+                    
+                    &:first-child {
+                        padding-left: 0; // gutter
+                    }
+
+                    &:last-child {
+                        padding-right: 0; // gutter
+                    }
+                }
+                
+                $col: 100% / $cols;
+                @for $i from 1 to $cols +1 {
+                    .col-#{$i} {
+                        width: $col * $i;
+                    }
+                }
+            }
+        }
+    }
+}

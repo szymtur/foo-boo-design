@@ -1,0 +1,40 @@
+#intro {
+   position: relative;
+   height: 85vh;
+   background-image: url('../images/intro_background.jpg');
+   background-size: cover;
+   background-position: top, right;
+   overflow: hidden;
+   
+   .left, .right {
+      height: 85vh;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      
+      .intro-caption {
+         @include image('../images/intro_caption.svg');
+         height: 20vw;
+         width: 30vw;
+         margin-bottom: 1.2vw;
+      }
+
+      p {
+         width: 83%;
+         font-size: 1.1vw;
+         line-height: 1.5vw;
+         text-align: justify;
+      }
+
+      a {
+         @include button($intro-button-color);
+         font-size: 1.3vw;
+         width: 66%;
+         height: 3.5vw;
+         margin-left: 17%;
+         margin-bottom: 2vw;
+         text-transform: uppercase;
+         letter-spacing: 0.15vw;
+      }
+   }
+}

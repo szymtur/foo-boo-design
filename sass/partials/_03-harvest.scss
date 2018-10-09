@@ -1,0 +1,49 @@
+#harvest {
+   height: 15vw;
+   background: $harvest-bg-color;
+
+   .vertical-margins {
+      height: 15vw;
+      display: flex;
+      align-items: center;
+   
+      .content {
+         padding: 1.2vw;
+         height: 8vw;
+         background: $harvest-content-bg-color;
+         color: $harvest-header-color;
+         overflow: hidden;
+         
+         .left {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            h2 {
+               @include roboto-medium;
+               font-size: 1.3vw;
+               margin-bottom: 0.5vw;
+            }
+
+            p {
+               color: $harvest-font-color;
+            }
+         }
+
+         .right {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            
+            a {
+               @include button($harvest-button-color);
+               text-transform: uppercase;
+            }
+         }
+      }
+   }
+}
+ 
+
