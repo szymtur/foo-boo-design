@@ -44,6 +44,21 @@
     }
 }
 
+@mixin tab-button-main {
+    width: 20vw;
+    height: 3.5vh;
+    font-size: 1em;
+}
+
+@mixin tab-button-landscape-main {
+    height: 6vh;
+}
+
+@mixin button-tab-submit ($height, $font-size){
+    height: $height;
+    font-size: $font-size;     
+}
+
 @mixin image($link) {
     background-image: url($link);
     background-position: center;

@@ -1,0 +1,114 @@
+#bottom-section {
+   background: $main-section-bg-color;
+   color: $main-section-font-color;
+   font-size: 2.5em;
+   line-height: 1.5em;
+   text-align: justify;
+   overflow: hidden;
+
+   h5 {
+      @include roboto-light;
+      font-size: 1.3em;   
+      text-transform: uppercase;
+      margin-bottom: 3vh;
+   }
+
+   h4 {
+      @include roboto-bold;
+      font-size: 1.9em;
+      text-transform: uppercase;
+      margin-bottom: 2vh;
+   }
+
+   span {
+      @include roboto-bold;
+   }
+
+   .left {
+      background: $main-section-container-bg-color;
+
+      .top.grid-row {
+         .col-6 {
+            figure.grid-row {
+               height: 340px;
+               width: 100;
+               background-image: url('../images/article_img.jpg');
+               background-size: cover;
+               background-position: bottom;
+            }
+   
+            @media (orientation: landscape) {
+               figure.grid-row {
+                  height: 445px;
+               }
+            }
+
+            @media (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+               figure.grid-row {
+                  height: 250px;
+               }
+            }
+         }
+
+         .col-6 {
+            .description.grid-row {
+               padding-top: 3vh;
+               padding-bottom: 2vh;
+               padding-left: 2vw;
+               padding-right: 2vw; 
+               overflow: hidden;
+            }
+         }
+      }
+
+      .bottom.grid-row {
+         padding-left: 2vw;
+         padding-right: 2vw; 
+         padding-bottom: 4vh;
+
+         overflow: hidden;   
+      }
+   }
+
+
+// ======================================================
+
+   .right {
+      padding-top: 3em;
+      padding-bottom: 2em;
+
+      form {
+         input {
+            height: 2.5em;
+         }
+
+         textarea {
+            height: 10em;
+            resize: none;
+         }
+
+         input, textarea {
+            margin-bottom: 0.8em;
+            width: 100%;
+            @include roboto-light;
+         }
+
+         input:not([type="submit"]), textarea {
+            padding: 1em;
+            font-size: 1em;
+         }
+
+         input:not([type="submit"]):focus, textarea:focus {
+            border: 1px solid $main-section-font-color;
+            outline: none;           
+         }
+
+         input[type="submit"] {
+            @include button($form-button-color);
+            @include button-tab-submit(2.5em, 1em);
+            width: 50%;
+            text-transform: uppercase;
+         }
+      }
+   }
+}

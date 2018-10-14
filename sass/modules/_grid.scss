@@ -1,7 +1,7 @@
 @mixin grid($cols) {
     .grid-container {
         width: 100%;
-        max-width: 1600px;
+        max-width: 1920px;
         margin-left: auto;
         margin-right: auto;
         * {
@@ -35,7 +35,7 @@
                         padding-right: 0; // gutter
                     }
                 }
-                
+
                 $col: 100% / $cols;
                 @for $i from 1 to $cols +1 {
                     .col-#{$i} {
@@ -45,4 +45,59 @@
             }
         }
     }
+
+    
+    @media (max-width: 499px) {
+        .grid-container {
+            .vertical-margins {
+                padding: 0;
+
+                .grid-row {
+
+                    [class*='col-'] {
+                        width: 100% !important;
+                        padding-left: 0;
+                        padding-right: 0;
+                        float: none;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 500px) and (max-width: 1024px) {
+        .grid-container {
+            .vertical-margins {
+                padding-left: 10%;
+                padding-right: 10%;
+
+                .grid-row {
+                    [class*='col-'] {
+                        width: 100% !important;
+                        margin: 0 auto;
+                        float: none;
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+
+                    [class=col-3] {
+                        width: 50% !important;
+                        margin: 0 auto;
+                        float: left;
+                        padding: 10px;
+
+                        &:nth-child(odd) {
+                            padding-left: 0; // gutter
+                        }
+    
+                        &:nth-child(even) {
+                            padding-right: 0; // gutter
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+
 }

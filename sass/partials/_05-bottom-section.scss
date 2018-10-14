@@ -4,6 +4,7 @@
    color: $main-section-font-color;
    font-size: 0.85vw;
    text-align: justify;
+   overflow: hidden;
 
    h5 {
       @include roboto-light;
@@ -23,8 +24,8 @@
    }
 
    .left {
-      height: 55vh;
       background: $main-section-container-bg-color;
+      padding-bottom: 5vh;
 
       .top.grid-row {
          height: 50%;
@@ -54,21 +55,17 @@
    }
 
    .right {
-      height: 55vh;
       padding-top: 0.8vw;
       padding-left: 0.25vw;
 
       form {
-         height: 80%;
-         display: flex;
-         flex-direction: column;
-         justify-content: space-between;
-         align-items: flex-end;
+         text-align: right;
 
          input:not([type="submit"]), textarea {
             padding: 0.5vw;
             width: 100%;
             font-size: 0.8vw;
+            margin-bottom: 2vh;
          }
 
          input:not([type="submit"]):focus, textarea:focus {
@@ -77,12 +74,12 @@
          }
 
          input:not([type="submit"]) {
-            height: 2vw;
+            height: 5vh;
          }
 
          textarea {
             @include roboto-regular;
-            height: 8vw;
+            height: 15vh;
             resize: none;
          }
 
@@ -90,6 +87,7 @@
             @include button($form-button-color);
             width: 50%;
             text-transform: uppercase;
+            display: inline-block;
          }
       }
    }

@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
    scrollTop();
    scrollBottom();
    showMenu();
-
 });
 
 function insertData() {
@@ -26,18 +25,47 @@ function insertData() {
 
 function showMenu(){
    let menu = document.querySelector('.main-nav .offer');
-
+   let checkBox = document.querySelector('.main-nav input[type="checkbox"]');
+   let burger = document.querySelector('.main-nav .burger');
+   let label = document.querySelector('.main-nav label[for="drop-menu"]');
+   let allLiHref = document.querySelectorAll('.main-nav a');
+   
+   // if(window.innerWidth >= 1025) {
       menu.addEventListener('mouseover', function(){
-         if (this.querySelector("ol") != null){
-            this.querySelector("ol").style.display = "block";
-         }   
+         this.querySelector("ol").classList.remove("hide");
       });
 
-   menu.addEventListener('mouseout', function() {
-      if (this.querySelector("ol") != null) {
-         this.querySelector("ol").style.display = "none"; 
+      menu.addEventListener('mouseout', function() {
+         this.querySelector("ol").classList.add("hide"); 
+      });
+   // }
+
+   menu.addEventListener('click', function(){
+      if (this.querySelector("ol").classList.contains("hide")) {
+         this.querySelector("ol").classList.remove("hide");
+      }
+      else {
+         this.querySelector("ol").classList.add("hide");
       }
    });
+
+   burger.addEventListener('click', function(){
+      menu.querySelector("ol").classList.add("hide");
+      if(checkBox.checked == true){
+         label.style.background = 'transparent';
+      }
+      else {
+         label.style.background = 'black';
+      }
+   });
+
+   for(let i=0; i<allLiHref.length; i++){
+      allLiHref[i].addEventListener('click', function(){
+         menu.querySelector("ol").classList.add("hide");
+         checkBox.checked = false;
+         label.style.background = 'transparent';
+      })
+   }
 }
 
 function scrollTop(){

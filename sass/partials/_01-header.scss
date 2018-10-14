@@ -17,6 +17,11 @@
         bottom: 0;  
         right: 14%;
 
+        label[for="drop-menu"],
+        input[type="checkbox"] {
+            display: none;
+        }
+
         ul {
             display: flex;
             flex-direction: row;
@@ -29,7 +34,7 @@
                 align-items: center;
                 padding-left: 1vw;
                 padding-right: 1vw;
-                transition: all 0.5s;
+                // transition: all 0.5s;
                 
                 &:hover {
                     background: $nav-hover-bg-color;
@@ -53,7 +58,6 @@
                 }
                 
                 ol {
-                    display: none;
                     width: 14vw;
                     height: 17vw;
                     background: $nav-hover-bg-color;
@@ -68,7 +72,7 @@
                         height: 3.2vw;
                         width: 14vw;
                         line-height: 1.4vw;
-                        border-bottom: 1px solid $header-bg-color;;
+                        border-bottom: 1px solid $menu-line-color;
                         transition: all 0.5s;
 
                         &:first-child {
@@ -79,6 +83,10 @@
                             background: $header-bg-color;
                         }
                     }
+                }
+
+                ol.hide{
+                    display: none;
                 }
             }        
         }

@@ -1,0 +1,97 @@
+#bottom-section {
+   background: $main-section-container-bg-color;
+   color: $main-section-font-color;
+   text-align: justify;
+   overflow: hidden;
+
+   h5 {
+      @include roboto-light;
+      font-size: 3.5em;   
+      text-transform: uppercase;
+   }
+
+   h4 {
+      @include roboto-bold;
+      font-size: 5em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+   }
+
+   p{
+      font-size: 3em;
+      line-height: 3vh;
+   }
+
+   span {
+      @include roboto-bold;
+   }
+
+   .left {
+      padding-bottom: 30px;      
+
+      .grid-row.top {
+         figure.grid-row {
+            @include image('../images/article_img_mobile.jpg');
+            background-size: cover;
+            width: 100vw;
+            height: 28vh;
+         }
+
+         .description.grid-row {
+            padding-left: 3vw;
+            padding-right: 3vw;
+            padding-top: 3vh;
+            padding-bottom: 10px;
+            overflow: hidden;
+         }
+      }
+
+      .bottom.grid-row {
+         padding-left: 3vw;
+         padding-right: 3vw;
+         padding-bottom: 10px;
+      }
+   }
+
+   .right {
+      background: $main-section-bg-color;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 3vw;
+      padding-right: 3vw;
+   
+      form {
+         input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            font-size: 4em;
+            @include roboto-light;
+         }
+
+         input {
+            height: 35px;
+         }
+
+         textarea {
+            height: 120px;
+            resize: none;
+         }
+
+         input:not([type="submit"]):focus, textarea:focus {
+            border: 1px solid $main-section-font-color;
+            outline: none;           
+         }
+
+         input[type="submit"] {
+            @include button($form-button-color);
+            @include roboto-light;
+            text-transform: uppercase;
+            height: 35px;
+            width: 100%;
+            font-size: 4em;     
+            line-height: 15px;          
+         }
+      }
+   }
+}

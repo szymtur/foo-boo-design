@@ -3,13 +3,33 @@
 @import 'modules/mixins';
 
 @import 'partials/_00-base';
-@import 'partials/_01-header';
-@import 'partials/_02-intro';
-@import 'partials/_03-harvest';
-@import 'partials/_04-main-section';
-@import 'partials/_05-bottom-section';
-@import 'partials/_06-footer';
 
+@media (min-width: 1025px) {
+   @import 'partials/_01-header';
+   @import 'partials/_02-intro';
+   @import 'partials/_03-harvest';
+   @import 'partials/_04-main-section';
+   @import 'partials/_05-bottom-section';
+   @import 'partials/_06-footer';
+}
+
+@media (min-width: 501px) and (max-width: 1024px) {
+   @import 'responsive/_01-tab-header.scss';
+   @import 'responsive/_02-tab-intro.scss';
+   @import 'responsive/_03-tab-harvest.scss';
+   @import 'responsive/_04-tab-main-section.scss';
+   @import 'responsive/_05-tab-bottom-section.scss';
+   @import 'responsive/_06-tab-footer.scss';
+}
+
+@media (max-width: 499px) {
+   @import 'responsive/_01-mob-header.scss';
+   @import 'responsive/_02-mob-intro.scss';
+   @import 'responsive/_03-mob-harvest.scss';
+   @import 'responsive/_04-mob-main-section.scss';
+   @import 'responsive/_05-mob-bottom-section.scss';
+   @import 'responsive/_06-mob-footer.scss';
+}
 
 
 

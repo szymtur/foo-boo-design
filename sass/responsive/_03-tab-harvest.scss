@@ -1,0 +1,52 @@
+#harvest {
+   background: $harvest-content-bg-color;
+   padding-top: 2vh;
+   padding-bottom: 4vh;
+
+   .vertical-margins {
+      .content {
+         color: $harvest-header-color;
+         overflow: hidden;
+         
+         .left {
+            h2 {
+               @include roboto-medium;
+               font-size: 3.5em;
+               margin-bottom: 1em;
+               line-height: 5vh;
+            }
+
+            p {
+               color: $harvest-font-color;
+               font-size: 2em;
+               line-height: 1.5em;
+               text-align: justify;
+               margin-bottom: 1em;
+            }
+         }
+
+         .right {
+            display: flex;
+            justify-content: center;
+
+            a {
+               @include button($harvest-button-color);
+               @include roboto-light;
+               text-transform: uppercase;
+               width: 50%;
+               height: 35px;
+               font-size: 2.8em;
+            }
+
+            @media (orientation: landscape) {
+               a {
+                  @include tab-button-landscape-main;
+                  font-size: 2em;
+               }
+            }
+         }
+      }
+   }
+}
+ 
+
