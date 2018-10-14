@@ -707,7 +707,6 @@ body {
       #main-header .main-nav label[for="drop-menu"] {
         font-size: 5vh;
         position: absolute;
-        z-index: 500;
         right: 0vw;
         top: 48%;
         -webkit-transform: translateY(-50%);
@@ -735,9 +734,9 @@ body {
         display: none;
         position: absolute;
         right: 0;
-        top: 9.3vh;
+        top: 9vh;
         width: 100%;
-        z-index: 500;
+        z-index: 100;
         background: #000000;
         list-style-type: none; }
         #main-header .main-nav ul li {
