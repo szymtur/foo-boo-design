@@ -367,6 +367,7 @@ body {
           overflow: hidden; }
         #main-section .grid-row .grid-container .text {
           height: 5.2vw;
+          width: 90%;
           overflow: hidden; }
         #main-section .grid-row .grid-container a {
           text-transform: lowercase; }
@@ -998,6 +999,7 @@ body {
         overflow: hidden; }
       #main-section .grid-row .col-3 .grid-container .text {
         height: 5.2em;
+        width: 90%;
         overflow: hidden; }
       #main-section .grid-row .col-3 .grid-container a {
         text-transform: lowercase;

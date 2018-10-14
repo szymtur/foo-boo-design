@@ -28,13 +28,11 @@
             text-align: right;
        
             & > li {
-                // border: 1px solid red;
                 height: 3vw;
                 display: flex;
                 align-items: center;
                 padding-left: 1vw;
                 padding-right: 1vw;
-                // transition: all 0.5s;
                 
                 &:hover {
                     background: $nav-hover-bg-color;

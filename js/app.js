@@ -30,24 +30,26 @@ function showMenu(){
    let label = document.querySelector('.main-nav label[for="drop-menu"]');
    let allLiHref = document.querySelectorAll('.main-nav a');
    
-   // if(window.innerWidth >= 1025) {
-      menu.addEventListener('mouseover', function(){
+   if(window.innerWidth >= 1025) {
+      menu.addEventListener('mouseover', function(event){
          this.querySelector("ol").classList.remove("hide");
       });
 
       menu.addEventListener('mouseout', function() {
          this.querySelector("ol").classList.add("hide"); 
       });
-   // }
+   }
 
-   menu.addEventListener('click', function(){
-      if (this.querySelector("ol").classList.contains("hide")) {
-         this.querySelector("ol").classList.remove("hide");
-      }
-      else {
-         this.querySelector("ol").classList.add("hide");
-      }
-   });
+   if (window.innerWidth < 1025){
+      menu.addEventListener('click', function(event){
+         if (event.target.querySelector("ol").classList.contains("hide")) {
+            event.target.querySelector("ol").classList.remove("hide");
+         }
+         else {
+            event.target.querySelector("ol").classList.add("hide");
+         }
+      });
+   }
 
    burger.addEventListener('click', function(){
       menu.querySelector("ol").classList.add("hide");
