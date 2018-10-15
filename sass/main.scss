@@ -13,7 +13,7 @@
    @import 'partials/_06-footer';
 }
 
-@media (min-width: 501px) and (max-width: 1024px) {
+@media (min-width: 500px) and (max-width: 1024px) {
    @import 'responsive/_01-tab-header.scss';
    @import 'responsive/_02-tab-intro.scss';
    @import 'responsive/_03-tab-harvest.scss';
