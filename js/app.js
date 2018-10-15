@@ -29,26 +29,36 @@ function showMenu(){
    let burger = document.querySelector('.main-nav .burger');
    let label = document.querySelector('.main-nav label[for="drop-menu"]');
    let allLiHref = document.querySelectorAll('.main-nav a');
+   let arrowDown = document.querySelector('.main-nav .fas');
    
    if(window.innerWidth >= 1025) {
       menu.addEventListener('mouseover', function(event){
-         this.querySelector("ol").classList.remove("hide");
+         if(this.querySelector("ol").classList != null){
+            this.querySelector("ol").classList.remove("hide");
+         }
       });
 
       menu.addEventListener('mouseout', function() {
-         this.querySelector("ol").classList.add("hide"); 
+         if(this.querySelector("ol").classList != null){
+            this.querySelector("ol").classList.add("hide"); 
+         }
       });
    }
 
-   if (window.innerWidth < 1025){
+   if (window.innerWidth < 1025) {
       menu.addEventListener('click', function(event){
-         if (event.target.querySelector("ol").classList.contains("hide")) {
+         if (event.target.querySelector("ol").classList == "hide") {
             event.target.querySelector("ol").classList.remove("hide");
+            event.stopPropagation();
          }
          else {
             event.target.querySelector("ol").classList.add("hide");
          }
       });
+
+      arrowDown.addEventListener('click', function(event){
+         event.stopPropagation();
+      })
    }
 
    burger.addEventListener('click', function(){
@@ -63,7 +73,7 @@ function showMenu(){
 
    for(let i=0; i<allLiHref.length; i++){
       allLiHref[i].addEventListener('click', function(){
-         menu.querySelector("ol").classList.add("hide");
+         event.stopPropagation();
          checkBox.checked = false;
          label.style.background = 'transparent';
       })
@@ -75,7 +85,7 @@ function scrollTop(){
    
    buttonSubmit.on('click', function(event){
       event.preventDefault();
-      $('html, body').animate({scrollTop: 0}, 1500, 'linear');
+      $('html, body').animate({  scrollTop: 0}, 1500, 'linear');
       return false;
    })
 }
