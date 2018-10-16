@@ -50,7 +50,7 @@
       justify-content: center;
       
       .logo-bottom {
-         @include image('../images/fooboo_logo.svg');
+         @include image('../graphics/svg/fooboo_logo.svg');
          height: 6vw;
          width: 10vw;
       }

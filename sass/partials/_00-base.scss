@@ -13,3 +13,9 @@ body {
     @include roboto-regular;
 }
 
+input, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+}
+

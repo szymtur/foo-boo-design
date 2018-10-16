@@ -1,10 +1,14 @@
+.hide{
+    display: none;
+}
+
 #main-header{
     position: relative;
     height: 15vh;
     background: $header-bg-color;
 
     figure.logo {
-        @include image('../images/fooboo_logo.svg');
+        @include image('../graphics/svg/fooboo_logo.svg');
         position: absolute;
         height: 5vw;
         width: 9vw;
@@ -81,10 +85,6 @@
                             background: $header-bg-color;
                         }
                     }
-                }
-
-                ol.hide{
-                    display: none;
                 }
             }        
         }

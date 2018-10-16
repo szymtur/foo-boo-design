@@ -16,10 +16,9 @@
          justify-content: center;
          
          .logo-bottom {
-            @include image('../images/fooboo_logo.svg');
+            @include image('../graphics/svg/fooboo_logo.svg');
             width: 40vw;
             height: 20vh;
-            
          }
       }
 

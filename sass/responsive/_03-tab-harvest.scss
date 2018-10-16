@@ -16,6 +16,19 @@
                line-height: 5vh;
             }
 
+            @media (orientation: landscape) {
+               h2 {
+                  margin-top: 4vh;
+               }
+            }
+
+            @media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+               h2 {
+                  margin-top: 5vh;
+                  margin-bottom: 5vh;
+               }
+            }
+
             p {
                color: $harvest-font-color;
                font-size: 2em;

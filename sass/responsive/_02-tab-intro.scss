@@ -1,7 +1,7 @@
 #intro {
    position: relative;
    height: 90vh;
-   background-image: url('../images/intro_background.jpg');
+   background-image: url('../graphics/img/intro_background.jpg');
    background-size: cover;
    background-position: 75%, 0;
    overflow: hidden;
@@ -21,7 +21,7 @@
       transform: translateX(-50%);
 
       .intro-caption {
-         @include image('../images/intro_caption.svg');
+         @include image('../graphics/svg/intro_caption.svg');
          height: 30vw;
          width: 50vw;
          margin-bottom: 1vh;
@@ -53,8 +53,8 @@
 
       @media (orientation: landscape) {
          .intro-caption {
-            height: 25vw;
-            width: 40vw;
+            height: 23vw;
+            width: 38vw;
          }
 
          a {

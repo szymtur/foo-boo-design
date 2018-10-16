@@ -1,7 +1,7 @@
 #intro {
    position: relative;
    height: 91vh;
-   background-image: url('../images/intro_background_mobile.jpg');
+   background-image: url('../graphics/img/intro_background_mobile.jpg');
    background-size: cover;
    background-position: top, -100px;
    overflow: hidden;
@@ -20,7 +20,7 @@
    
          .left {
             .intro-caption {
-               @include image('../images/intro_caption.svg');
+               @include image('../graphics/svg/intro_caption.svg');
                background-size: 85% 95%, auto;
                width: 100vw;
                height: 80%;

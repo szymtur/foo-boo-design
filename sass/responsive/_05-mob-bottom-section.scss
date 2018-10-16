@@ -31,7 +31,7 @@
 
       .grid-row.top {
          figure.grid-row {
-            @include image('../images/article_img_mobile.jpg');
+            @include image('../graphics/img/article_img_mobile.jpg');
             background-size: cover;
             width: 100vw;
             height: 28vh;

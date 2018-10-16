@@ -29,12 +29,6 @@
             align-items: center;
          }
 
-         .thumbnail {
-            display: none;
-            width: 8vw;
-            height: 8vw;         
-         }
-
          h3 {
             @include roboto-medium;
             text-transform: uppercase;
@@ -55,8 +49,8 @@
       }
 
       .col-3:first-of-type {
-         .thumbnail {
-            @include image('../images/thumb_1.svg');
+         a {
+            @include button($main-section-btn-1-color);
          }
 
          .icon {
@@ -65,16 +59,9 @@
             font-size: 4.5vw;
          }
 
-         a {
-            @include button($main-section-btn-1-color);
-         }
       }
 
       .col-3:nth-of-type(2){ 
-         .thumbnail {
-            @include image('../images/thumb_2.svg');
-         }
-
          a {
             @include button($main-section-btn-2-color);
          }
@@ -88,10 +75,6 @@
       }
 
       .col-3:nth-of-type(3){
-         .thumbnail {
-            @include image('../images/thumb_3.svg');
-         }
- 
          a {
             @include button($main-section-btn-3-color);
          }
@@ -104,10 +87,6 @@
       }
 
       .col-3:nth-of-type(4){ 
-         .thumbnail {
-            @include image('../images/thumb_4.svg');
-         }
-
          a {
             @include button($main-section-btn-4-color);
          }

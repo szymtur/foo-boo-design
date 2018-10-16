@@ -9,7 +9,7 @@
    font-size: 5.5em;
 
    figure.logo {
-      @include image('../images/fooboo_logo_mob.svg');
+      @include image('../graphics/svg/fooboo_logo_mob.svg');
       position: absolute;
       height: 5vh;
       width: 20vh;
@@ -47,12 +47,12 @@
          display: none;
          position: absolute;
          right: 0;
-         top: 8.1vh;
+         top: 7.9vh;
          width: 100%;
          z-index: 500;
          background: $mobile-menu-bg-color;
          list-style-type: none;
-
+         
          li {
             text-align: center;
             padding-top: 2vh;
