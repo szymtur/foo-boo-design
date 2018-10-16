@@ -27,6 +27,7 @@ function showMenu(){
    let menu = document.querySelector('.main-nav .offer');
    let checkBox = document.querySelector('.main-nav input[type="checkbox"]');
    let burger = document.querySelector('.main-nav .burger');
+   let close = document.querySelector('.main-nav .close');
    let label = document.querySelector('.main-nav label[for="drop-menu"]');
    let allLiHref = document.querySelectorAll('.main-nav a');
    let arrowDown = document.querySelector('.main-nav .fas');
@@ -61,20 +62,27 @@ function showMenu(){
       })
    }
 
-   burger.addEventListener('click', function(){
+   label.addEventListener('click', function(){
       menu.querySelector("ol").classList.add("hide");
+      
       if(checkBox.checked == true){
          label.style.background = 'transparent';
+         burger.classList.remove("hide");
+         close.classList.add("hide");
       }
       else {
          label.style.background = 'black';
+         burger.classList.add("hide");
+         close.classList.remove("hide");
       }
    });
 
    for(let i=0; i<allLiHref.length; i++){
-      allLiHref[i].addEventListener('click', function(){
+      allLiHref[i].addEventListener('click', function(event) {
          event.stopPropagation();
          checkBox.checked = false;
+         burger.classList.remove("hide");
+         close.classList.add("hide");
          label.style.background = 'transparent';
       })
    }

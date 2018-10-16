@@ -684,6 +684,8 @@ body {
             color: #897983; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
+  .hide {
+    display: none; }
   #main-header {
     position: relative;
     height: 10vh;
@@ -719,9 +721,9 @@ body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-        #main-header .main-nav label[for="drop-menu"] .fa {
+        #main-header .main-nav label[for="drop-menu"] .burger, #main-header .main-nav label[for="drop-menu"] .close {
           position: absolute;
-          top: 50%;
+          top: 51%;
           -webkit-transform: translateY(-50%);
                   transform: translateY(-50%);
           text-align: center; } }
@@ -756,9 +758,7 @@ body {
               background: #22252e;
               border-top: 1px solid #3a4541; }
               #main-header .main-nav ul li ol li:hover {
-                background: #000000; }
-          #main-header .main-nav ul li ol.hide {
-            display: none; } }
+                background: #000000; } }
       @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
         #main-header .main-nav ul li {
           padding-top: 1.7vh;
@@ -1346,6 +1346,8 @@ body {
               color: #897983; } }
 
 @media (max-width: 499px) {
+  .hide {
+    display: none; }
   #main-header {
     position: relative;
     height: 9vh;
@@ -1383,7 +1385,7 @@ body {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; }
-        #main-header .main-nav label[for="drop-menu"] .fa {
+        #main-header .main-nav label[for="drop-menu"] .burger, #main-header .main-nav label[for="drop-menu"] .close {
           position: absolute;
           top: 50%;
           -webkit-transform: translateY(-50%);
@@ -1416,8 +1418,6 @@ body {
               border-top: 1px solid #3a4541; }
               #main-header .main-nav ul li ol li:hover {
                 background: #000000; }
-          #main-header .main-nav ul li ol.hide {
-            display: none; }
         #main-header .main-nav ul > li {
           border-bottom: 1px solid #3a4541; }
           #main-header .main-nav ul > li:hover {

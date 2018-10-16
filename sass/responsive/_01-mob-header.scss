@@ -1,3 +1,7 @@
+.hide {
+   display: none;
+}
+
 #main-header{
    position: relative;
    height: 9vh;
@@ -31,7 +35,7 @@
          display: flex;
          justify-content: center;
 
-         .fa {
+         .burger, .close {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -75,15 +79,10 @@
                   &:hover {
                      background: $mobile-menu-bg-color;
                   }
-
                }
             }
-
-            ol.hide {
-               display: none;
-            }
-
          }
+
          & > li {
             border-bottom: 1px solid $menu-line-color;
 
