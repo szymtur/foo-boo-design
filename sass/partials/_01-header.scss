@@ -40,6 +40,10 @@
                 
                 &:hover {
                     background: $nav-hover-bg-color;
+
+                    ol {
+                        display: block;
+                    }
                 }
 
                 .fas {

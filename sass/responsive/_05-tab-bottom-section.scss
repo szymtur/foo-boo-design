@@ -88,6 +88,10 @@
             margin-bottom: 0.8em;
             width: 100%;
             @include roboto-light;
+            border-radius: 0;
+            border: 1px solid $input-border-color;
+            -webkit-appearance: none;
+            -moz-appearance: none;
          }
 
          input:not([type="submit"]), textarea {

@@ -106,8 +106,8 @@
 
          @media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
             li {
-               padding-top: 1.5vh;
-               padding-bottom: 1.5vh;
+               padding-top: 1.33vh;
+               padding-bottom: 1.33vh;
 
                ol {
                   margin-top: 1.5vh;
@@ -127,7 +127,7 @@
 
       @media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
          ul {
-            top: 11.5vh;
+            top: 11vh;
          }
       }
 

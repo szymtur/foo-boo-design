@@ -92,6 +92,12 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
+input, textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  border: 1px solid #c0c0c0; }
+
 @media (min-width: 1025px) {
   .hide {
     display: none; }
@@ -138,6 +144,8 @@ body {
           padding-right: 1vw; }
           #main-header .main-nav ul > li:hover {
             background: #1d2027; }
+            #main-header .main-nav ul > li:hover ol {
+              display: block; }
           #main-header .main-nav ul > li .fas {
             margin-left: 0.5vw; }
         #main-header .main-nav ul li {
@@ -486,12 +494,12 @@ body {
         color: #74cc3f;
         font-size: 3.5vw; }
   #bottom-section {
-    height: 60vh;
     background: #ededed;
     color: #676767;
-    font-size: 0.85vw;
+    font-size: 1vw;
     text-align: justify;
-    overflow: hidden; }
+    overflow: hidden;
+    padding-bottom: 4vh; }
     #bottom-section h5 {
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
@@ -502,13 +510,13 @@ body {
       font-weight: 700;
       font-size: 1.2vw;
       text-transform: uppercase;
-      margin-bottom: 1.2vw; }
+      margin-bottom: 1vw; }
     #bottom-section span {
       font-family: 'Roboto', sans-serif;
       font-weight: 700; }
     #bottom-section .left {
       background: #ffffff;
-      padding-bottom: 5vh; }
+      padding-bottom: 1vh; }
       #bottom-section .left .top.grid-row {
         height: 50%; }
         #bottom-section .left .top.grid-row figure.grid-row {
@@ -517,7 +525,6 @@ body {
           background-size: cover;
           background-position: center; }
         #bottom-section .left .top.grid-row .description.grid-row {
-          height: 27.5vh;
           padding-right: 1.5vw;
           padding-left: 0.5vw;
           line-height: 1.3vw;
@@ -525,7 +532,6 @@ body {
           overflow: hidden; }
       #bottom-section .left .bottom.grid-row {
         padding: 1.5vw;
-        height: 50%;
         overflow: hidden; }
     #bottom-section .right {
       padding-top: 0.8vw;
@@ -535,7 +541,7 @@ body {
         #bottom-section .right form input:not([type="submit"]), #bottom-section .right form textarea {
           padding: 0.5vw;
           width: 100%;
-          font-size: 0.8vw;
+          font-size: 1vw;
           margin-bottom: 2vh; }
         #bottom-section .right form input:not([type="submit"]):focus, #bottom-section .right form textarea:focus {
           border: 1px solid #676767;
@@ -748,8 +754,8 @@ body {
             margin-bottom: -1.7vh; } }
       @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
         #main-header .main-nav ul li {
-          padding-top: 1.5vh;
-          padding-bottom: 1.5vh; }
+          padding-top: 1.33vh;
+          padding-bottom: 1.33vh; }
           #main-header .main-nav ul li ol {
             margin-top: 1.5vh;
             margin-bottom: -1.5vh; } }
@@ -761,7 +767,7 @@ body {
             background: #22252e; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav ul {
-        top: 11.5vh; } }
+        top: 11vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
       #main-header .main-nav #drop-menu {
@@ -807,7 +813,8 @@ body {
         background-size: 98%;
         height: 30vw;
         width: 50vw;
-        margin-bottom: 1vh; }
+        margin-bottom: 1vh;
+        background-size: 94%; }
       #intro .left p {
         width: 100%;
         font-size: 2.5em;
@@ -853,7 +860,8 @@ body {
         height: 23vw;
         width: 38vw; }
       #intro .left a {
-        font-size: 3em; }
+        font-size: 3em;
+        margin-bottom: 6vh; }
       #intro .left p {
         margin-bottom: 4vh;
         font-size: 2.2em; } }
@@ -1216,7 +1224,11 @@ body {
         margin-bottom: 0.8em;
         width: 100%;
         font-family: 'Roboto', sans-serif;
-        font-weight: 300; }
+        font-weight: 300;
+        border-radius: 0;
+        border: 1px solid #c0c0c0;
+        -webkit-appearance: none;
+        -moz-appearance: none; }
       #bottom-section .right form input:not([type="submit"]), #bottom-section .right form textarea {
         padding: 1em;
         font-size: 1em; }
@@ -1415,7 +1427,7 @@ body {
     #intro .vertical-margins {
       background: rgba(124, 132, 154, 0.61); }
       #intro .vertical-margins .grid-row {
-        height: 50vh; }
+        height: 45vh; }
         #intro .vertical-margins .grid-row .right {
           display: none; }
         #intro .vertical-margins .grid-row .left .intro-caption {
@@ -1423,7 +1435,7 @@ body {
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;
-          background-size: 85% 95%, auto;
+          background-size: 70% 60%, auto;
           width: 100vw;
           height: 80%;
           overflow: hidden; }
@@ -1538,7 +1550,7 @@ body {
       text-transform: uppercase;
       margin-bottom: 10px; }
     #bottom-section p {
-      font-size: 3em;
+      font-size: 2vh;
       line-height: 3vh; }
     #bottom-section span {
       font-family: 'Roboto', sans-serif;
@@ -1575,7 +1587,11 @@ body {
         width: 100%;
         font-size: 4em;
         font-family: 'Roboto', sans-serif;
-        font-weight: 300; }
+        font-weight: 300;
+        border-radius: 0;
+        border: 1px solid #c0c0c0;
+        -webkit-appearance: none;
+        -moz-appearance: none; }
       #bottom-section .right form input {
         height: 35px; }
       #bottom-section .right form textarea {

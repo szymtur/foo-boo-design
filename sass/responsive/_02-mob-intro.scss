@@ -12,7 +12,7 @@
       background: rgba(124, 132, 154, 0.61);
 
       .grid-row{
-         height: 50vh;
+         height: 45vh;
    
          .right {
             display: none;
@@ -21,7 +21,7 @@
          .left {
             .intro-caption {
                @include image('../graphics/svg/intro_caption.svg');
-               background-size: 85% 95%, auto;
+               background-size: 70% 60%, auto;
                width: 100vw;
                height: 80%;
                overflow: hidden;

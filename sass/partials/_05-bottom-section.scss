@@ -1,10 +1,10 @@
 #bottom-section {
-   height: 60vh;
    background: $main-section-bg-color;
    color: $main-section-font-color;
-   font-size: 0.85vw;
+   font-size: 1vw;
    text-align: justify;
    overflow: hidden;
+   padding-bottom: 4vh;
 
    h5 {
       @include roboto-light;
@@ -16,7 +16,7 @@
       @include roboto-bold;
       font-size: 1.2vw;
       text-transform: uppercase;
-      margin-bottom: 1.2vw;
+      margin-bottom: 1vw;
    }
 
    span {
@@ -25,7 +25,7 @@
 
    .left {
       background: $main-section-container-bg-color;
-      padding-bottom: 5vh;
+      padding-bottom: 1vh;
 
       .top.grid-row {
          height: 50%;
@@ -38,7 +38,6 @@
          }
 
          .description.grid-row {
-            height: 27.5vh;
             padding-right: 1.5vw;
             padding-left: 0.5vw; 
             line-height: 1.3vw;
@@ -49,7 +48,6 @@
 
       .bottom.grid-row {
          padding: 1.5vw;
-         height: 50%;
          overflow: hidden;   
       }
    }
@@ -64,7 +62,7 @@
          input:not([type="submit"]), textarea {
             padding: 0.5vw;
             width: 100%;
-            font-size: 0.8vw;
+            font-size: 1vw;
             margin-bottom: 2vh;
          }
 

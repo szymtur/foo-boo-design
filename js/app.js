@@ -1,11 +1,14 @@
 import '../sass/main.scss';
 import data from '../json/boxes.json';
+import icon from '../graphics/favicon/favicon.png';
 
 document.addEventListener("DOMContentLoaded", function(event) {
    insertData();
    scrollTop();
    scrollBottom();
    showMenu();
+   changeFavicon(icon);
+   
 });
 
 function insertData() {
@@ -106,3 +109,18 @@ function scrollBottom(){
       return false;        
    })
 }
+
+function changeFavicon(img) {
+   let favicon = document.querySelector('link[rel="shortcut icon"]');
+
+   if (!favicon) {
+      favicon = document.createElement('link');
+      favicon.setAttribute('rel', 'shortcut icon');
+      let head = document.querySelector('head');
+      head.appendChild(favicon);
+   }
+   
+   favicon.setAttribute('type', 'image/png');
+   favicon.setAttribute('href', `images/${img}`);
+}
+
