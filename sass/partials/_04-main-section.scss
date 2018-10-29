@@ -1,15 +1,11 @@
 #main-section {
-   height: 60vh;
    background: $main-section-bg-color;
    color: $main-section-font-color;
+   padding-top: 3vh;
+   padding-bottom: 3vh;
 
    .grid-row {
-      height: 60vh;
-      display: flex;
-      align-items: center;
-
       .grid-container {
-         height: 55vh;
          display: flex;
          flex-direction: column;
          justify-content: space-around;
@@ -17,7 +13,10 @@
          background: $main-section-container-bg-color;
          text-align: center;
          overflow: hidden;
-         padding: 1.5vw;
+         padding-left: 1.5vw;
+         padding-right: 1.5vw;
+         padding-bottom: 4vh;
+         padding-top: 4vh;
          
          .icon {
             border: 3px solid transparent;
@@ -27,6 +26,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 3vh;
          }
 
          h3 {
@@ -35,12 +35,14 @@
             height: 1.6vw;
             width: 115%;
             overflow: hidden;
+            margin-bottom: 3vh;
          }
 
          .text {
             height: 5.2vw;
             width: 90%;
             overflow: hidden;
+            margin-bottom: 3vh;
          }
          
          a {

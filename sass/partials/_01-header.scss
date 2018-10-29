@@ -1,8 +1,8 @@
-.hide{
+.hide {
     display: none;
 }
 
-#main-header{
+#main-header {
     position: relative;
     height: 15vh;
     background: $header-bg-color;
@@ -71,6 +71,7 @@
                     top: 3vw;
                     right: 16.9vw;
                     z-index: 300;
+                    
                     li {
                         padding: 1vw;
                         display: block;

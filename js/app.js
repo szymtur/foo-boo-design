@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
    scrollBottom();
    showMenu();
    changeFavicon(icon);
-   
 });
 
 function insertData() {
