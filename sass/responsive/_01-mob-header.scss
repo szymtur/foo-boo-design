@@ -2,11 +2,12 @@
    display: none;
 }
 
-#main-header{
+#main-header {
+   @include roboto-light;
    position: relative;
    height: 9vh;
    background: $header-bg-color;
-   font-size: 5.5em;
+   font-size: 3.4vh;
 
    figure.logo {
       @include image('../graphics/svg/fooboo_logo_mob.svg');
@@ -55,8 +56,8 @@
          
          li {
             text-align: center;
-            padding-top: 2vh;
-            padding-bottom: 2vh;
+            padding-top: 2.03vh;
+            padding-bottom: 2.03vh;
 
             a {
                text-decoration: none;

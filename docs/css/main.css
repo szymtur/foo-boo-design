@@ -1334,10 +1334,12 @@ input, textarea {
   .hide {
     display: none; }
   #main-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     position: relative;
     height: 9vh;
     background: #393c46;
-    font-size: 5.5em; }
+    font-size: 3.4vh; }
     #main-header figure.logo {
       background-image: url(../images/fb0b6e0cbe1a6ea3168941d4c1cf696c.svg);
       background-position: center;
@@ -1387,8 +1389,8 @@ input, textarea {
         list-style-type: none; }
         #main-header .main-nav ul li {
           text-align: center;
-          padding-top: 2vh;
-          padding-bottom: 2vh; }
+          padding-top: 2.03vh;
+          padding-bottom: 2.03vh; }
           #main-header .main-nav ul li a {
             text-decoration: none;
             color: #ffffff; }
