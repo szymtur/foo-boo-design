@@ -14,9 +14,9 @@
       
       .intro-caption {
          @include image('../graphics/svg/intro_caption.svg');
-         height: 20vw;
-         width: 30vw;
-         margin-bottom: 1.2vw;
+         height: 45vh;
+         background-size: 85%;
+         background-position: left;
       }
 
       p {
