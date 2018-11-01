@@ -1337,7 +1337,7 @@ form input, form textarea {
     position: relative;
     height: 9vh;
     background: #393c46;
-    font-size: 3vh; }
+    font-size: 3.2vh; }
     #main-header figure.logo {
       background-image: url(../images/fb0b6e0cbe1a6ea3168941d4c1cf696c.svg);
       background-position: center;
@@ -1387,8 +1387,8 @@ form input, form textarea {
         list-style-type: none; }
         #main-header .main-nav ul li {
           text-align: center;
-          padding-top: 2.1vh;
-          padding-bottom: 2.1vh; }
+          padding-top: 2.125vh;
+          padding-bottom: 2.125vh; }
           #main-header .main-nav ul li a {
             text-decoration: none;
             color: #ffffff; }
