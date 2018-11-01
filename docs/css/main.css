@@ -1387,8 +1387,8 @@ form input, form textarea {
         list-style-type: none; }
         #main-header .main-nav ul li {
           text-align: center;
-          padding-top: 2.165vh;
-          padding-bottom: 2.165vh; }
+          padding-top: 2.15vh;
+          padding-bottom: 2.15vh; }
           #main-header .main-nav ul li a {
             text-decoration: none;
             color: #ffffff; }
@@ -1435,7 +1435,7 @@ form input, form textarea {
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;
-          background-size: 70%;
+          background-size: 50%;
           height: 80%;
           overflow: hidden; }
         #intro .vertical-margins .grid-row .left a {
