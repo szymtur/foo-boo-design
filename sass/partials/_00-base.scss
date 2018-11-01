@@ -13,10 +13,12 @@ body {
     @include roboto-regular;
 }
 
-input, textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 0;
-    border: 1px solid $input-border-color;
+form {
+    input, textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0;
+        border: 1px solid $input-border-color;
+    }
 }
 

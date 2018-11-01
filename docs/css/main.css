@@ -92,7 +92,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
-input, textarea {
+form input, form textarea {
   -webkit-appearance: none;
   -moz-appearance: none;
   border-radius: 0;
@@ -1226,9 +1226,7 @@ input, textarea {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         border-radius: 0;
-        border: 1px solid #c0c0c0;
-        -webkit-appearance: none;
-        -moz-appearance: none; }
+        border: 1px solid #c0c0c0; }
       #bottom-section .right form input:not([type="submit"]), #bottom-section .right form textarea {
         padding: 1em;
         font-size: 1em; }
@@ -1590,9 +1588,7 @@ input, textarea {
         font-family: 'Roboto', sans-serif;
         font-weight: 300;
         border-radius: 0;
-        border: 1px solid #c0c0c0;
-        -webkit-appearance: none;
-        -moz-appearance: none; }
+        border: 1px solid #c0c0c0; }
       #bottom-section .right form input {
         height: 35px; }
       #bottom-section .right form textarea {
