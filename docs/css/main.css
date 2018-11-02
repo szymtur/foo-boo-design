@@ -200,12 +200,12 @@ form input, form textarea {
           -ms-flex-direction: column;
               flex-direction: column; }
       #intro .left .intro-caption, #intro .right .intro-caption {
-        background-image: url(../images/00a229d0692a0e7cf30a5ab6a30d96a1.svg);
+        background-image: url(../images/23fd9cb0bd5209f07711163620bcee7c.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
         height: 45vh;
-        background-size: 85%;
+        background-size: 83%;
         background-position: left; }
       #intro .left p, #intro .right p {
         width: 83%;
@@ -786,7 +786,7 @@ form input, form textarea {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
       #intro .left .intro-caption {
-        background-image: url(../images/00a229d0692a0e7cf30a5ab6a30d96a1.svg);
+        background-image: url(../images/23fd9cb0bd5209f07711163620bcee7c.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
@@ -1431,11 +1431,11 @@ form input, form textarea {
         #intro .vertical-margins .grid-row .right {
           display: none; }
         #intro .vertical-margins .grid-row .left .intro-caption {
-          background-image: url(../images/00a229d0692a0e7cf30a5ab6a30d96a1.svg);
+          background-image: url(../images/23fd9cb0bd5209f07711163620bcee7c.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;
-          background-size: 50%;
+          background-size: 80%;
           height: 80%;
           overflow: hidden; }
         #intro .vertical-margins .grid-row .left a {
