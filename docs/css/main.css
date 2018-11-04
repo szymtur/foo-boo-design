@@ -200,7 +200,7 @@ form input, form textarea {
           -ms-flex-direction: column;
               flex-direction: column; }
       #intro .left .intro-caption, #intro .right .intro-caption {
-        background-image: url(../images/1150d605f0d2983a383cf95e0a6a5328.svg);
+        background-image: url(../images/a8faa6f2ba2740b1e34627238c0cae6e.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
@@ -786,7 +786,7 @@ form input, form textarea {
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
       #intro .left .intro-caption {
-        background-image: url(../images/1150d605f0d2983a383cf95e0a6a5328.svg);
+        background-image: url(../images/a8faa6f2ba2740b1e34627238c0cae6e.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
@@ -1337,7 +1337,7 @@ form input, form textarea {
     position: relative;
     height: 9vh;
     background: #393c46;
-    font-size: 3.2vh; }
+    font-size: 3vh; }
     #main-header figure.logo {
       background-image: url(../images/fb0b6e0cbe1a6ea3168941d4c1cf696c.svg);
       background-position: center;
@@ -1387,16 +1387,16 @@ form input, form textarea {
         list-style-type: none; }
         #main-header .main-nav ul li {
           text-align: center;
-          padding-top: 2.1525vh;
-          padding-bottom: 2.1525vh; }
+          padding-top: 2.275vh;
+          padding-bottom: 2.275vh; }
           #main-header .main-nav ul li a {
             text-decoration: none;
             color: #ffffff; }
           #main-header .main-nav ul li .fas {
             margin-left: 1em; }
           #main-header .main-nav ul li ol {
-            margin-top: 2vh;
-            margin-bottom: -2vh;
+            margin-top: 2.275vh;
+            margin-bottom: -2.275vh;
             list-style-type: none; }
             #main-header .main-nav ul li ol li {
               background: #22252e;
@@ -1431,7 +1431,7 @@ form input, form textarea {
         #intro .vertical-margins .grid-row .right {
           display: none; }
         #intro .vertical-margins .grid-row .left .intro-caption {
-          background-image: url(../images/1150d605f0d2983a383cf95e0a6a5328.svg);
+          background-image: url(../images/a8faa6f2ba2740b1e34627238c0cae6e.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;

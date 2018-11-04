@@ -7,7 +7,7 @@
    position: relative;
    height: 9vh;
    background: $header-bg-color;
-   font-size: 3.2vh;
+   font-size: 3vh;
 
    figure.logo {
       @include image('../graphics/svg/fooboo_logo_mob.svg');
@@ -56,8 +56,8 @@
          
          li {
             text-align: center;
-            padding-top: 2.1525vh;
-            padding-bottom: 2.1525vh;
+            padding-top: 2.275vh;
+            padding-bottom: 2.275vh;
 
             a {
                text-decoration: none;
@@ -69,8 +69,8 @@
             }
 
             ol {
-               margin-top: 2vh;
-               margin-bottom: -2vh;
+               margin-top: 2.275vh;
+               margin-bottom: -2.275vh;
                list-style-type: none;
 
                li {
