@@ -751,10 +751,11 @@ form input, form textarea {
             background: #22252e; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #main-header .main-nav ul {
-        top: 14vh; } }
+        top: 13vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav ul {
-        top: 13vh; } }
+        top: 13vh;
+        background: red; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
       #main-header .main-nav #drop-menu {

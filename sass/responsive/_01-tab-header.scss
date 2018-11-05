@@ -135,13 +135,15 @@
 
       @media (orientation: landscape) {
          ul {
-            top: 14vh;
+            top: 13vh;
          }
       }
 
       @media (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
          ul {
             top: 13vh;
+            background: red;
+            
          }
       }
 
