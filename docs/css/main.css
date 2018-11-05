@@ -671,7 +671,7 @@ form input, form textarea {
         font-size: 6vh;
         position: absolute;
         right: 0vw;
-        top: 45%;
+        top: 47.5%;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%);
         width: 15vw;
@@ -691,7 +691,7 @@ form input, form textarea {
           text-align: center; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #main-header .main-nav label[for="drop-menu"] {
-        top: 50%;
+        top: 47.5%;
         height: 14vh;
         font-size: 7vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
@@ -848,11 +848,11 @@ form input, form textarea {
           background: #c0c0c0; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #intro .left .intro-caption {
-        background-size: 50%;
+        background-size: 40%;
         background-position: left; }
       #intro .left a {
         font-size: 3em;
-        margin-bottom: 3vh; }
+        margin-bottom: 1vh; }
       #intro .left p {
         margin-bottom: 4vh;
         font-size: 2.2em; } }
