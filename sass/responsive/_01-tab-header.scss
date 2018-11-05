@@ -42,22 +42,6 @@
          }
       }
 
-      @media (orientation: landscape) {
-         label[for="drop-menu"] {
-            top: 45%;
-            height: 14vh;
-            font-size: 7vh;
-         }
-      }
-
-      @media (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
-         label[for="drop-menu"] {
-            top: 60%;
-            height: 17vh;
-            font-size: 9vh;
-         }
-      }
-
       ul {
          display: none;
          position: absolute;
@@ -97,31 +81,6 @@
                   }
                }
             }
-
-         }
-
-         @media (orientation: landscape) {
-            li {
-               padding-top: 1.65vh;
-               padding-bottom: 1.65vh;
-
-               ol {
-                  margin-top: 1.65vh;
-                  margin-bottom: -1.65vh;
-               }
-            }
-         }
-
-         @media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
-            li {
-               padding-top: 1.25vh;
-               padding-bottom: 1.25vh;
-
-               ol {
-                  margin-top: 1.25vh;
-                  margin-bottom: -1.25vh;
-               }
-            }
          }
 
          & > li {
@@ -130,18 +89,6 @@
             &:hover {
                background: $mobile-menu-hover-color;
             }
-         }
-      }
-
-      @media (orientation: landscape) {
-         ul {
-            top: 10vh;
-         }
-      }
-
-      @media (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
-         ul {
-            top: 13vh;
          }
       }
 
@@ -155,6 +102,7 @@
    }
 }
 
+
 @media (orientation: landscape) {
    #main-header {
       height: 12vh;
@@ -165,8 +113,31 @@
          height: 10vh;
          width: 25vh;
       }
+
+      .main-nav {
+         label[for="drop-menu"] {
+            top: 45%;
+            height: 14vh;
+            font-size: 7vh;
+         }
+
+         ul {
+            top: 10vh;
+
+            li {
+               padding-top: 1.65vh;
+               padding-bottom: 1.65vh;
+
+               ol {
+                  margin-top: 1.65vh;
+                  margin-bottom: -1.65vh;
+               }
+            }
+         }
+      }
    }
 }
+
 
 @media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
    #main-header {
@@ -177,6 +148,28 @@
       figure.logo {
          height: 15vh;
          width: 30vh;
+      }
+
+      .main-nav {
+         label[for="drop-menu"] {
+            top: 60%;
+            height: 17vh;
+            font-size: 9vh;
+         }
+
+         ul {
+            top: 13vh;
+
+            li {
+               padding-top: 1.25vh;
+               padding-bottom: 1.25vh;
+
+               ol {
+                  margin-top: 1.25vh;
+                  margin-bottom: -1.25vh;
+               }
+            }
+         }
       }
    }
 }
