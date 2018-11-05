@@ -6,7 +6,7 @@
    position: relative;
    height: 10vh;
    background: $header-bg-color;
-   font-size: 3.1vh;
+   font-size: 3.41vh;
    
    figure.logo {
       @include image('../graphics/svg/fooboo_logo_mob.svg');
@@ -44,7 +44,7 @@
 
       @media (orientation: landscape) {
          label[for="drop-menu"] {
-            top: 47.5%;
+            top: 45%;
             height: 14vh;
             font-size: 7vh;
          }

@@ -37,7 +37,7 @@
          .col-6 {
             figure.grid-row {
                height: 340px;
-               width: 100;
+               // width: 100%;
                background-image: url('../graphics/img/article_img.jpg');
                background-size: cover;
                background-position: bottom;
@@ -45,7 +45,7 @@
    
             @media (orientation: landscape) {
                figure.grid-row {
-                  height: 445px;
+                  height: 60vh;
                }
             }
 

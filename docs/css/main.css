@@ -651,7 +651,7 @@ form input, form textarea {
     position: relative;
     height: 10vh;
     background: #393c46;
-    font-size: 3.1vh; }
+    font-size: 3.41vh; }
     #main-header figure.logo {
       background-image: url(../images/b8ca5114e68cd9dba7c8478540aa5674.svg);
       background-position: center;
@@ -691,7 +691,7 @@ form input, form textarea {
           text-align: center; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #main-header .main-nav label[for="drop-menu"] {
-        top: 47.5%;
+        top: 45%;
         height: 14vh;
         font-size: 7vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
@@ -946,7 +946,8 @@ form input, form textarea {
       @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
         #harvest .vertical-margins .content .right a {
           height: 6vh;
-          font-size: 2em; } }
+          font-size: 2.8em;
+          height: 8vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
   #main-section {
@@ -1211,13 +1212,12 @@ form input, form textarea {
       background: #ffffff; }
       #bottom-section .left .top.grid-row .col-6 figure.grid-row {
         height: 340px;
-        width: 100;
         background-image: url(../images/837c2ed5b6b7d8f980654191cfcb92e5.jpg);
         background-size: cover;
         background-position: bottom; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #bottom-section .left .top.grid-row .col-6 figure.grid-row {
-        height: 445px; } }
+        height: 60vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #bottom-section .left .top.grid-row .col-6 figure.grid-row {
         height: 250px; } }

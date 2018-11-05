@@ -54,7 +54,8 @@
             @media (orientation: landscape) {
                a {
                   @include tab-button-landscape-main;
-                  font-size: 2em;
+                  font-size: 2.8em;
+                  height: 8vh;
                }
             }
          }
