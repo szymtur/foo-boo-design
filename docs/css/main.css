@@ -106,7 +106,7 @@ form input, form textarea {
     height: 15vh;
     background: #393c46; }
     #main-header figure.logo {
-      background-image: url(../images/93d46e8c1b0829e5a878719a71b8350d.svg);
+      background-image: url(../images/cda6ec97721d2e82a686aa067b5a1323.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 98%;
@@ -612,7 +612,7 @@ form input, form textarea {
           -ms-flex-pack: center;
               justify-content: center; }
       #footer .center .logo-bottom {
-        background-image: url(../images/93d46e8c1b0829e5a878719a71b8350d.svg);
+        background-image: url(../images/cda6ec97721d2e82a686aa067b5a1323.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
@@ -651,9 +651,9 @@ form input, form textarea {
     position: relative;
     height: 10vh;
     background: #393c46;
-    font-size: 4em; }
+    font-size: 3.1vh; }
     #main-header figure.logo {
-      background-image: url(../images/fb0b6e0cbe1a6ea3168941d4c1cf696c.svg);
+      background-image: url(../images/b8ca5114e68cd9dba7c8478540aa5674.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 98%;
@@ -691,7 +691,7 @@ form input, form textarea {
           text-align: center; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav label[for="drop-menu"] {
-        top: 55%;
+        top: 65%;
         height: 16vh;
         font-size: 7vh; } }
 
@@ -708,16 +708,16 @@ form input, form textarea {
         opacity: 0.95; }
         #main-header .main-nav ul li {
           text-align: center;
-          padding-top: 2vh;
-          padding-bottom: 2vh; }
+          padding-top: 1.7vh;
+          padding-bottom: 1.7vh; }
           #main-header .main-nav ul li a {
             text-decoration: none;
             color: #ffffff; }
           #main-header .main-nav ul li .fas {
             margin-left: 1em; }
           #main-header .main-nav ul li ol {
-            margin-top: 2vh;
-            margin-bottom: -2vh;
+            margin-top: 1.7vh;
+            margin-bottom: -1.7vh;
             list-style-type: none; }
             #main-header .main-nav ul li ol li {
               background: #22252e;
@@ -726,18 +726,18 @@ form input, form textarea {
                 background: #000000; } }
       @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
         #main-header .main-nav ul li {
-          padding-top: 1.7vh;
-          padding-bottom: 1.7vh; }
+          padding-top: 1.885vh;
+          padding-bottom: 1.885vh; }
           #main-header .main-nav ul li ol {
-            margin-top: 1.7vh;
-            margin-bottom: -1.7vh; } }
+            margin-top: 1.885vh;
+            margin-bottom: -1.885vh; } }
       @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
         #main-header .main-nav ul li {
           padding-top: 1.3vh;
           padding-bottom: 1.3vh; }
           #main-header .main-nav ul li ol {
-            margin-top: 1.5vh;
-            margin-bottom: -1.5vh; } }
+            margin-top: 1.3vh;
+            margin-bottom: -1.3vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
         #main-header .main-nav ul > li {
@@ -746,7 +746,7 @@ form input, form textarea {
             background: #22252e; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav ul {
-        top: 11vh; } }
+        top: 13vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
       #main-header .main-nav #drop-menu {
@@ -756,14 +756,15 @@ form input, form textarea {
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #main-header {
-    font-size: 2.4em; } }
+    font-weight: 300;
+    font-size: 3.6vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
   #main-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 2.4em;
-    height: 13vh; } }
+    font-size: 4vh;
+    height: 15vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
   #intro {
@@ -1286,7 +1287,7 @@ form input, form textarea {
             -ms-flex-pack: center;
                 justify-content: center; }
         #footer .vertical-margins > .grid-row .center .logo-bottom {
-          background-image: url(../images/93d46e8c1b0829e5a878719a71b8350d.svg);
+          background-image: url(../images/cda6ec97721d2e82a686aa067b5a1323.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;
@@ -1339,7 +1340,7 @@ form input, form textarea {
     background: #393c46;
     font-size: 3vh; }
     #main-header figure.logo {
-      background-image: url(../images/fb0b6e0cbe1a6ea3168941d4c1cf696c.svg);
+      background-image: url(../images/b8ca5114e68cd9dba7c8478540aa5674.svg);
       background-position: center;
       background-repeat: no-repeat;
       background-size: 98%;
@@ -1653,7 +1654,7 @@ form input, form textarea {
             -ms-flex-pack: center;
                 justify-content: center; }
         #footer .vertical-margins > .grid-row .center .logo-bottom {
-          background-image: url(../images/93d46e8c1b0829e5a878719a71b8350d.svg);
+          background-image: url(../images/cda6ec97721d2e82a686aa067b5a1323.svg);
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;
