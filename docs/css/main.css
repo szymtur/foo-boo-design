@@ -561,7 +561,6 @@ form input, form textarea {
             border: 1px solid #000000;
             background: #c0c0c0; }
   #footer {
-    height: 35vh;
     margin-bottom: 10vh;
     background: #2a2d35; }
     #footer .col-2, #footer .col-3 {
@@ -1300,11 +1299,12 @@ form input, form textarea {
           background-position: center;
           background-repeat: no-repeat;
           background-size: 98%;
-          width: 30vw;
-          height: 20vh; } }
+          width: 35vw;
+          height: 25vh; } }
       @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
         #footer .vertical-margins > .grid-row .center .logo-bottom {
-          width: 20vw; } }
+          width: 30vw;
+          height: 35vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
       #footer .vertical-margins > .grid-row .social-icons {
@@ -1338,6 +1338,13 @@ form input, form textarea {
                     transform: rotate(360deg); }
             #footer .vertical-margins > .grid-row .social-icons .icon:hover .fab {
               color: #897983; } }
+      @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+        #footer .vertical-margins > .grid-row .social-icons .icon {
+          width: 50px;
+          height: 50px;
+          margin-bottom: 1vh; }
+          #footer .vertical-margins > .grid-row .social-icons .icon .fab {
+            font-size: 25px; } }
 
 @media (max-width: 499px) {
   .hide {
@@ -1669,14 +1676,14 @@ form input, form textarea {
           background-repeat: no-repeat;
           background-size: 98%;
           width: 40vw;
-          height: 30vh; }
+          height: 20vh; }
       #footer .vertical-margins > .grid-row .social-icons {
         text-align: center;
         padding-top: 2vw;
         padding-bottom: 2vw; }
         #footer .vertical-margins > .grid-row .social-icons .icon {
-          width: 35px;
-          height: 35px;
+          width: 45px;
+          height: 45px;
           border: 1px solid white;
           border-radius: 50%;
           background: #897983;
@@ -1684,14 +1691,14 @@ form input, form textarea {
           -webkit-transition: all 0.5s;
           transition: all 0.5s;
           position: relative;
-          margin: 4px; }
+          margin: 5px; }
           #footer .vertical-margins > .grid-row .social-icons .icon .fab {
             position: absolute;
             top: 50%;
             left: 50%;
             -webkit-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
-            font-size: 16px;
+            font-size: 20px;
             color: white; }
           #footer .vertical-margins > .grid-row .social-icons .icon:hover {
             background: white;
