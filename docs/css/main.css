@@ -751,7 +751,7 @@ form input, form textarea {
             background: #22252e; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #main-header .main-nav ul {
-        top: 11vh; } }
+        top: 10vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav ul {
         top: 13vh;
