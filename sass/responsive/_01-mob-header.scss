@@ -38,7 +38,7 @@
 
          .burger, .close {
             position: absolute;
-            top: 50%;
+            top: 57.5%;
             transform: translateY(-50%);
             text-align: center;
          }
@@ -48,7 +48,7 @@
          display: none;
          position: absolute;
          right: 0;
-         top: 7.9vh;
+         top: 8.5vh;
          width: 100%;
          z-index: 500;
          background: $mobile-menu-bg-color;
@@ -56,8 +56,8 @@
          
          li {
             text-align: center;
-            padding-top: 2.275vh;
-            padding-bottom: 2.275vh;
+            padding-top: 2.265vh;
+            padding-bottom: 2.265vh;
 
             a {
                text-decoration: none;
@@ -75,7 +75,7 @@
 
                li {
                   background: $mobile-menu-hover-color;
-                  border-top: 1px solid $menu-line-color;
+                  border-top: 0.2vh solid $menu-line-color;
 
                   &:hover {
                      background: $mobile-menu-bg-color;
@@ -85,7 +85,7 @@
          }
 
          & > li {
-            border-bottom: 1px solid $menu-line-color;
+            border-bottom: 0.2vh solid $menu-line-color;
 
             &:hover {
                background: $mobile-menu-hover-color;
@@ -97,7 +97,7 @@
          display: none;
       }
 
-      #drop-menu:checked + ul{
+      #drop-menu:checked + ul {
          display: block;
       }
    }
