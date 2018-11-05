@@ -48,13 +48,13 @@
 
       @media (orientation: landscape) {
          .intro-caption {
-            background-size: 60%;
+            background-size: 50%;
             background-position: left;
          }
 
          a {
             font-size: 3em;
-            // margin-bottom: 6vh;
+            margin-bottom: 3vh;
          }
 
          p {
@@ -70,6 +70,7 @@
          
          a {
             height: 30px;
+            margin-bottom: 6vh;
          }
       }
    }
