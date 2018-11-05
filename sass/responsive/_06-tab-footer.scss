@@ -34,22 +34,23 @@
          padding-bottom: 2vw;
          
          .icon {
-            width: 35px;
-            height: 35px;
+            width: 70px;
+            height: 70px;
             border: 1px solid white;
             border-radius: 50%;
             background: $social-icons-bg-color;
             display: inline-block;
             transition: all 0.5s;
             position: relative;
-            margin: 4px;
+            margin: 1vw;
+            margin-bottom: 0;
 
             .fab {
                position: absolute;
                top: 50%;
                left: 50%;
                transform: translate(-50%, -50%);
-               font-size: 16px;
+               font-size: 35px;
                color: white;
             }
    
