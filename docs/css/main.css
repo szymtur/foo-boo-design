@@ -1300,13 +1300,7 @@ form input, form textarea {
           background-repeat: no-repeat;
           background-size: 98%;
           width: 35vw;
-          height: 20vh; } }
-      @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
-        #footer .vertical-margins > .grid-row .center .logo-bottom {
-          width: 25vw;
-          height: 25vh; } }
-
-@media (min-width: 500px) and (max-width: 1024px) {
+          height: 20vh; }
       #footer .vertical-margins > .grid-row .social-icons {
         text-align: center;
         padding-top: 2vw;
@@ -1338,27 +1332,29 @@ form input, form textarea {
                     transform: rotate(360deg); }
             #footer .vertical-margins > .grid-row .social-icons .icon:hover .fab {
               color: #897983; } }
-      @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
-        #footer .vertical-margins > .grid-row .social-icons .icon {
-          width: 45px;
-          height: 45px;
-          margin-bottom: 1vh; }
-          #footer .vertical-margins > .grid-row .social-icons .icon .fab {
-            font-size: 20px; } }
-      @media (min-width: 500px) and (max-width: 1024px) and (min-height: 481px) and (max-height: 768px) and (orientation: landscape) {
-        #footer .vertical-margins > .grid-row .social-icons .icon {
-          width: 70px;
-          height: 70px;
-          margin-bottom: 1vh; }
-          #footer .vertical-margins > .grid-row .social-icons .icon .fab {
-            font-size: 35px; } }
-      @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
-        #footer .vertical-margins > .grid-row .social-icons .icon {
-          width: 45px;
-          height: 45px;
-          margin-bottom: 1vh; }
-          #footer .vertical-margins > .grid-row .social-icons .icon .fab {
-            font-size: 20px; } }
+
+@media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
+  #footer .vertical-margins > .grid-row .center .logo-bottom {
+    width: 25vw;
+    height: 30vh; } }
+
+@media (min-width: 500px) and (max-width: 1024px) and (min-height: 481px) and (max-height: 768px) and (orientation: landscape) {
+  #footer .vertical-margins > .grid-row .center .logo-bottom {
+    height: 25vh; }
+  #footer .vertical-margins > .grid-row .social-icons .icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1vh; }
+    #footer .vertical-margins > .grid-row .social-icons .icon .fab {
+      font-size: 35px; } }
+
+@media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+  #footer .vertical-margins > .grid-row .social-icons .icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 1vh; }
+    #footer .vertical-margins > .grid-row .social-icons .icon .fab {
+      font-size: 20px; } }
 
 @media (max-width: 499px) {
   .hide {
