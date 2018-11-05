@@ -22,7 +22,7 @@
 
       .intro-caption {
          @include image('../graphics/svg/intro_caption.svg');
-         height: 40vh;
+         height: 30vh;
          background-size: 80%;
          background-position: left;
          overflow: hidden;
@@ -40,20 +40,20 @@
          @include button($intro-button-color);
          font-size: 3.5em;
          width: 100%;
-         height: 50px;
-         // margin-bottom: 5vh;
+         height: 60px;
          text-transform: uppercase;
          letter-spacing: 0.15vw;
       }
 
       @media (orientation: landscape) {
          .intro-caption {
-            background-size: 40%;
+            background-size: 45%;
             background-position: left;
          }
 
          a {
             font-size: 3em;
+            height: 8vh;
             margin-bottom: 1vh;
          }
 

@@ -806,7 +806,7 @@ form input, form textarea {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
-        height: 40vh;
+        height: 30vh;
         background-size: 80%;
         background-position: left;
         overflow: hidden; }
@@ -840,7 +840,7 @@ form input, form textarea {
                 align-items: center;
         font-size: 3.5em;
         width: 100%;
-        height: 50px;
+        height: 60px;
         text-transform: uppercase;
         letter-spacing: 0.15vw; }
         #intro .left a:hover {
@@ -848,10 +848,11 @@ form input, form textarea {
           background: #c0c0c0; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #intro .left .intro-caption {
-        background-size: 40%;
+        background-size: 45%;
         background-position: left; }
       #intro .left a {
         font-size: 3em;
+        height: 8vh;
         margin-bottom: 1vh; }
       #intro .left p {
         margin-bottom: 4vh;
