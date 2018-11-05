@@ -44,9 +44,9 @@
 
       @media (orientation: landscape) {
          label[for="drop-menu"] {
-            top: 65%;
-            height: 17vh;
-            font-size: 8vh;
+            top: 55%;
+            height: 14vh;
+            font-size: 7vh;
          }
       }
 
@@ -135,7 +135,7 @@
 
       @media (orientation: landscape) {
          ul {
-            top: 12vh;
+            top: 11vh;
          }
       }
 
@@ -159,13 +159,13 @@
 
 @media (orientation: landscape) {
    #main-header {
-      height: 15vh;
+      height: 12vh;
       font-weight: 300;
-      font-size: 3.6vh;
+      font-size: 3.8vh;
 
       figure.logo {
-         height: 15vh;
-         width: 30vh;
+         height: 10vh;
+         width: 25vh;
       }
    }
 }

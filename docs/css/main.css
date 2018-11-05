@@ -691,9 +691,9 @@ form input, form textarea {
           text-align: center; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #main-header .main-nav label[for="drop-menu"] {
-        top: 65%;
-        height: 17vh;
-        font-size: 8vh; } }
+        top: 55%;
+        height: 14vh;
+        font-size: 7vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav label[for="drop-menu"] {
         top: 60%;
@@ -751,7 +751,7 @@ form input, form textarea {
             background: #22252e; } }
     @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
       #main-header .main-nav ul {
-        top: 12vh; } }
+        top: 11vh; } }
     @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
       #main-header .main-nav ul {
         top: 13vh;
@@ -765,12 +765,12 @@ form input, form textarea {
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #main-header {
-    height: 15vh;
+    height: 12vh;
     font-weight: 300;
-    font-size: 3.6vh; }
+    font-size: 3.8vh; }
     #main-header figure.logo {
-      height: 15vh;
-      width: 30vh; } }
+      height: 10vh;
+      width: 25vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
   #main-header {
@@ -869,7 +869,7 @@ form input, form textarea {
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #intro {
-    height: 85vh;
+    height: 88vh;
     background-position: top, right; } }
 
 @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
