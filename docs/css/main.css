@@ -806,7 +806,7 @@ form input, form textarea {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 98%;
-        height: 30vh;
+        height: 40vh;
         background-size: 80%;
         background-position: left;
         overflow: hidden; }
@@ -852,7 +852,7 @@ form input, form textarea {
         background-position: left; }
       #intro .left a {
         font-size: 3em;
-        height: 8vh;
+        height: 10vh;
         margin-bottom: 1vh; }
       #intro .left p {
         margin-bottom: 4vh;
