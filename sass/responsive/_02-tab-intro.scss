@@ -22,7 +22,7 @@
 
       .intro-caption {
          @include image('../graphics/svg/intro_caption.svg');
-         height: 45vh;
+         height: 40vh;
          background-size: 80%;
          background-position: left;
          overflow: hidden;
@@ -41,7 +41,7 @@
          font-size: 3.5em;
          width: 100%;
          height: 50px;
-         margin-bottom: 5vh;
+         // margin-bottom: 5vh;
          text-transform: uppercase;
          letter-spacing: 0.15vw;
       }
@@ -54,7 +54,7 @@
 
          a {
             font-size: 3em;
-            margin-bottom: 6vh;
+            // margin-bottom: 6vh;
          }
 
          p {
@@ -84,5 +84,11 @@
 @media (orientation: landscape) {
    #intro {
       background-position: top, right;
+   }
+}
+
+@media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+   #intro {
+      height: 85vh;
    }
 }
