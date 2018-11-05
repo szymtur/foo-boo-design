@@ -54,8 +54,68 @@
                height: 35px;
             }
          }
+      }
 
-         @media (orientation: landscape) {
+      .col-3:first-of-type {
+         a {
+            @include button($main-section-btn-1-color);
+            @include tab-button-main;
+         }
+
+         .icon {
+            border-color: $main-section-icon-1-color;
+            color: $main-section-icon-1-color;
+            font-size: 60px;
+         }
+      }
+
+      .col-3:nth-of-type(2){ 
+         a {
+            @include button($main-section-btn-2-color);
+            @include tab-button-main;   
+         }
+
+         .icon {
+            border-color: $main-section-icon-2-color;
+            color: $main-section-icon-2-color;
+            font-size: 55px;
+            transform: rotate(-45deg);
+         }
+      }
+
+      .col-3:nth-of-type(3){
+         a {
+            @include button($main-section-btn-3-color);
+            @include tab-button-main;
+         }
+
+         .icon {
+            border-color: $main-section-icon-3-color;
+            color: $main-section-icon-3-color;
+            font-size: 60px;
+         }
+      }
+
+      .col-3:nth-of-type(4){ 
+         a {
+            @include button($main-section-btn-4-color);
+            @include tab-button-main;
+         }
+
+         .icon {
+            border-color: $main-section-icon-4-color;
+            color: $main-section-icon-4-color;
+            font-size: 50px;   
+         }
+      }
+   }
+}
+
+
+@media (orientation: landscape) {
+   #main-section {
+      .grid-row {
+         .col-3 {
             .grid-container {
                padding-top: 6vh;
                padding-bottom: 7vh;
@@ -74,7 +134,38 @@
             }
          }
 
-         @media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+         .col-3:first-of-type {
+            a {
+               @include tab-button-landscape-main;
+            }
+         }
+
+         .col-3:nth-of-type(2){ 
+            a {
+               @include tab-button-landscape-main;
+            }
+         }
+
+         .col-3:nth-of-type(3){
+            a {
+               @include tab-button-landscape-main;
+            }
+         }
+   
+         .col-3:nth-of-type(4){ 
+            a {
+               @include tab-button-landscape-main;
+            }
+         }
+      }
+   }
+}
+
+
+@media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+   #main-section {
+      .grid-row {
+         .col-3 {
             .grid-container {
                padding-top: 7vh;
                padding-bottom: 8vh;
@@ -91,83 +182,6 @@
                   margin-bottom: 6vh;
                }
             }
-         }
-      }
-
-      .col-3:first-of-type {
-         .icon {
-            border-color: $main-section-icon-1-color;
-            color: $main-section-icon-1-color;
-            font-size: 60px;
-         }
-
-         a {
-            @include button($main-section-btn-1-color);
-            @include tab-button-main;
-         }
-
-         @media (orientation: landscape) {
-            a {
-               @include tab-button-landscape-main;
-            }
-         }
-      }
-
-      .col-3:nth-of-type(2){ 
-         a {
-            @include button($main-section-btn-2-color);
-            @include tab-button-main;   
-         }
-
-         @media (orientation: landscape) {
-            a {
-               @include tab-button-landscape-main;
-            }
-         }
-
-         .icon {
-            border-color: $main-section-icon-2-color;
-            color: $main-section-icon-2-color;
-            font-size: 55px;
-            transform: rotate(-45deg);
-         }
-      }
-
-      .col-3:nth-of-type(3){
-         a {
-            @include button($main-section-btn-3-color);
-            @include tab-button-main;
-         }
-
-         @media (orientation: landscape) {
-            a {
-               @include tab-button-landscape-main;
-            }
-         }
-
-         .icon {
-            border-color: $main-section-icon-3-color;
-            color: $main-section-icon-3-color;
-            font-size: 60px;
-         }
-      }
-
-      .col-3:nth-of-type(4){ 
-         a {
-            @include button($main-section-btn-4-color);
-            @include tab-button-main;
-         }
-
-         @media (orientation: landscape) {
-            a {
-               @include tab-button-landscape-main;
-            }
-         }
-
-         .icon {
-            border-color: $main-section-icon-4-color;
-            color: $main-section-icon-4-color;
-            font-size: 50px;   
          }
       }
    }
