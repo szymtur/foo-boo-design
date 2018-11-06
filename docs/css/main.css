@@ -740,14 +740,12 @@ form input, form textarea {
       height: 12vh; }
       #main-header .main-nav label[for="drop-menu"] {
         top: 50%;
-        right: 10%;
         height: 14vh;
         width: 25%;
         font-size: 6.5vh; }
       #main-header .main-nav ul {
         width: 50%;
-        top: 11.5vh;
-        right: 10%; }
+        top: 11.5vh; }
         #main-header .main-nav ul li {
           padding-top: 1.64vh;
           padding-bottom: 1.64vh; }
