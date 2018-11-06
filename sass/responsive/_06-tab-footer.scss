@@ -72,6 +72,18 @@
                height: 30vh;
             }
          }
+
+         .social-icons {
+            .icon {
+               width: 45px;
+               height: 45px;
+               margin-bottom: 1vh;
+               
+               .fab {
+                  font-size: 20px;
+               }
+            }
+         }
       }
    }
 }

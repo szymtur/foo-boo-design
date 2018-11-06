@@ -149,30 +149,32 @@
    #main-header {
       @include roboto-light;
       font-size: 4vh;
-      height: 15vh;
+      height: 12vh;
 
       figure.logo {
-         height: 15vh;
-         width: 30vh;
+         height: 12vh;
+         width: 28vh;
       }
 
       .main-nav {
+         height: 12vh;
+         
          label[for="drop-menu"] {
-            top: 60%;
-            height: 17vh;
-            font-size: 9vh;
+            top: 50%;
+            height: 14vh;
+            font-size: 7vh;
          }
 
          ul {
-            top: 13vh;
+            top: 11.5vh;
 
             li {
-               padding-top: 1.25vh;
-               padding-bottom: 1.25vh;
+               padding-top: 1.28vh;
+               padding-bottom: 1.28vh;
 
                ol {
-                  margin-top: 1.25vh;
-                  margin-bottom: -1.25vh;
+                  margin-top: 1.28vh;
+                  margin-bottom: -1.28vh;
                }
             }
          }
