@@ -746,7 +746,7 @@ form input, form textarea {
         #main-header .main-nav label[for="drop-menu"] .burger {
           right: 20%; }
         #main-header .main-nav label[for="drop-menu"] .close {
-          right: 5%; }
+          right: 10%; }
       #main-header .main-nav ul {
         width: 50%;
         top: 11.5vh; }
@@ -761,25 +761,18 @@ form input, form textarea {
   #main-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 4vh;
-    height: 12vh; }
+    font-size: 4vh; }
     #main-header figure.logo {
       height: 12vh;
       width: 28vh; }
-    #main-header .main-nav {
-      height: 12vh; }
-      #main-header .main-nav label[for="drop-menu"] {
-        top: 50%;
-        height: 14vh;
-        font-size: 7vh; }
-      #main-header .main-nav ul {
-        top: 11.5vh; }
-        #main-header .main-nav ul li {
-          padding-top: 1.28vh;
-          padding-bottom: 1.28vh; }
-          #main-header .main-nav ul li ol {
-            margin-top: 1.28vh;
-            margin-bottom: -1.28vh; } }
+    #main-header .main-nav label[for="drop-menu"] {
+      font-size: 7vh; }
+    #main-header .main-nav ul li {
+      padding-top: 1.28vh;
+      padding-bottom: 1.28vh; }
+      #main-header .main-nav ul li ol {
+        margin-top: 1.28vh;
+        margin-bottom: -1.28vh; } }
 
 @media (min-width: 500px) and (max-width: 1024px) {
   #intro {
@@ -1337,11 +1330,11 @@ form input, form textarea {
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #footer .vertical-margins > .grid-row .center .logo-bottom {
-    width: 25vw;
-    height: 30vh; }
+    height: 30vh;
+    width: 25vw; }
   #footer .vertical-margins > .grid-row .social-icons .icon {
-    width: 45px;
     height: 45px;
+    width: 45px;
     margin-bottom: 1vh; }
     #footer .vertical-margins > .grid-row .social-icons .icon .fab {
       font-size: 20px; } }
@@ -1358,8 +1351,8 @@ form input, form textarea {
 
 @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
   #footer .vertical-margins > .grid-row .social-icons .icon {
-    width: 45px;
     height: 45px;
+    width: 45px;
     margin-bottom: 1vh; }
     #footer .vertical-margins > .grid-row .social-icons .icon .fab {
       font-size: 20px; } }

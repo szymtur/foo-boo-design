@@ -132,7 +132,7 @@
             }
 
             .close {
-               right: 5%;
+               right: 10%;
             }
          }
 
@@ -159,7 +159,6 @@
    #main-header {
       @include roboto-light;
       font-size: 4vh;
-      height: 12vh;
 
       figure.logo {
          height: 12vh;
@@ -167,17 +166,11 @@
       }
 
       .main-nav {
-         height: 12vh;
-         
          label[for="drop-menu"] {
-            top: 50%;
-            height: 14vh;
             font-size: 7vh;
          }
 
          ul {
-            top: 11.5vh;
-
             li {
                padding-top: 1.28vh;
                padding-bottom: 1.28vh;
