@@ -26,7 +26,7 @@ function insertData() {
 }
 
 function showMenu(){
-   let menu = document.querySelector('.main-nav .offer');
+   let offerMenu = document.querySelector('.main-nav .offer');
    let checkBox = document.querySelector('.main-nav input[type="checkbox"]');
    let burger = document.querySelector('.main-nav .burger');
    let close = document.querySelector('.main-nav .close');
@@ -35,13 +35,13 @@ function showMenu(){
    let arrowDown = document.querySelector('.main-nav .fas');
    
    if(window.innerWidth >= 1025) {
-      menu.addEventListener('mouseover', function(event){
+      offerMenu.addEventListener('mouseover', function(event){
          if(this.querySelector("ol").classList != null){
             this.querySelector("ol").classList.remove("hide");
          }
       });
 
-      menu.addEventListener('mouseout', function() {
+      offerMenu.addEventListener('mouseout', function() {
          if(this.querySelector("ol").classList != null){
             this.querySelector("ol").classList.add("hide"); 
          }
@@ -49,7 +49,7 @@ function showMenu(){
    }
 
    if (window.innerWidth < 1025) {
-      menu.addEventListener('click', function(event){
+      offerMenu.addEventListener('click', function(event){
          if (event.target.querySelector("ol").classList == "hide") {
             event.target.querySelector("ol").classList.remove("hide");
             event.stopPropagation();
@@ -64,8 +64,9 @@ function showMenu(){
       })
    }
 
+   //opening and closing mobile menu after clicking on checkbox label
    label.addEventListener('click', function(){
-      menu.querySelector("ol").classList.add("hide");
+      offerMenu.querySelector("ol").classList.add("hide");
       
       if(checkBox.checked == true){
          label.style.background = 'transparent';
@@ -79,6 +80,7 @@ function showMenu(){
       }
    });
 
+   //closing menu after clicking an anchor 
    for(let i=0; i<allLiHref.length; i++){
       allLiHref[i].addEventListener('click', function(event) {
          event.stopPropagation();

@@ -100,7 +100,7 @@
          display: none;
       }
 
-      #drop-menu:checked + ul{
+      #drop-menu:checked + ul {
          display: block;
       }
    }
@@ -124,8 +124,16 @@
          label[for="drop-menu"] {
             top: 50%;
             height: 14vh;
-            width: 25%;
+            width: 50%;
             font-size: 6.5vh;
+
+            .burger {
+               right: 20%;
+            }
+
+            .close {
+               right: 5%;
+            }
          }
 
          ul {
