@@ -114,6 +114,7 @@ form input, form textarea {
       height: 5vw;
       width: 9vw;
       top: 50%;
+      left: 10%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
     #main-header .main-nav {
