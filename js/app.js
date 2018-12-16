@@ -33,6 +33,7 @@ function showMenu(){
    let label = document.querySelector('.main-nav label[for="drop-menu"]');
    let allLiHref = document.querySelectorAll('.main-nav a');
    let arrowDown = document.querySelector('.main-nav .fas');
+   let content = document.querySelector('#content');
    
    if(window.innerWidth >= 1025) {
       offerMenu.addEventListener('mouseover', function(event){
@@ -72,11 +73,13 @@ function showMenu(){
          label.style.background = 'transparent';
          burger.classList.remove("hide");
          close.classList.add("hide");
+         content.classList.remove("hide");
       }
       else {
          label.style.background = 'black';
          burger.classList.add("hide");
          close.classList.remove("hide");
+         content.classList.add("hide");
       }
    });
 
@@ -87,6 +90,7 @@ function showMenu(){
          checkBox.checked = false;
          burger.classList.remove("hide");
          close.classList.add("hide");
+         content.classList.remove("hide");
          label.style.background = 'transparent';
       })
    }

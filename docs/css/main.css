@@ -98,9 +98,10 @@ form input, form textarea {
   border-radius: 0;
   border: 1px solid #c0c0c0; }
 
+.hide {
+  display: none; }
+
 @media (min-width: 1025px) {
-  .hide {
-    display: none; }
   #main-header {
     position: relative;
     height: 15vh;
@@ -1359,8 +1360,6 @@ form input, form textarea {
       font-size: 20px; } }
 
 @media (max-width: 499px) {
-  .hide {
-    display: none; }
   #main-header {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;

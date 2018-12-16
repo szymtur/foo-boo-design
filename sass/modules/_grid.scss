@@ -46,14 +46,12 @@
         }
     }
 
-    
     @media (max-width: 499px) {
         .grid-container {
             .vertical-margins {
                 padding: 0;
 
                 .grid-row {
-
                     [class*='col-'] {
                         width: 100% !important;
                         padding-left: 0;
