@@ -89,6 +89,7 @@ body {
   background-color: #21252e;
   color: #ffffff;
   font-size: 0.95vw;
+  overflow-y: scroll;
   font-family: 'Roboto', sans-serif;
   font-weight: 400; }
 
@@ -245,8 +246,8 @@ form input, form textarea {
         text-transform: uppercase;
         letter-spacing: 0.15vw; }
         #intro .left a:hover, #intro .right a:hover {
-          border: 1px solid #000000;
-          background: #c0c0c0; }
+          border: 1px solid #000000 !important;
+          background: #c0c0c0 !important; }
   #harvest {
     background: #ffffff;
     padding-top: 4vh;
@@ -299,8 +300,8 @@ form input, form textarea {
                   align-items: center;
           text-transform: uppercase; }
           #harvest .content .right a:hover {
-            border: 1px solid #000000;
-            background: #c0c0c0; }
+            border: 1px solid #000000 !important;
+            background: #c0c0c0 !important; }
   #main-section {
     background: #ededed;
     color: #676767;
@@ -320,6 +321,9 @@ form input, form textarea {
           -ms-flex-align: center;
               align-items: center;
       background: #ffffff;
+      border: 1px solid transparent;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
       text-align: center;
       overflow: hidden;
       padding-left: 1.5vw;
@@ -340,7 +344,9 @@ form input, form textarea {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        margin-bottom: 3vh; }
+        margin-bottom: 3vh;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; }
       #main-section .grid-row .grid-container h3 {
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
@@ -356,6 +362,14 @@ form input, form textarea {
         margin-bottom: 3vh; }
       #main-section .grid-row .grid-container a {
         text-transform: lowercase; }
+      #main-section .grid-row .grid-container:hover {
+        border: 1px solid #676767; }
+        #main-section .grid-row .grid-container:hover .icon {
+          color: #676767 !important;
+          border-color: #676767 !important; }
+        #main-section .grid-row .grid-container:hover a {
+          background: #676767 !important;
+          border-color: transparent !important; }
     #main-section .grid-row .col-3:first-of-type a {
       font-family: 'Roboto', sans-serif;
       font-weight: 400;
@@ -379,8 +393,8 @@ form input, form textarea {
           -ms-flex-align: center;
               align-items: center; }
       #main-section .grid-row .col-3:first-of-type a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:first-of-type .icon {
       border-color: #2ce6d7;
       color: #2ce6d7;
@@ -408,8 +422,8 @@ form input, form textarea {
           -ms-flex-align: center;
               align-items: center; }
       #main-section .grid-row .col-3:nth-of-type(2) a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:nth-of-type(2) .icon {
       border-color: #2ce6d7;
       color: #2ce6d7;
@@ -439,8 +453,8 @@ form input, form textarea {
           -ms-flex-align: center;
               align-items: center; }
       #main-section .grid-row .col-3:nth-of-type(3) a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:nth-of-type(3) .icon {
       border-color: #c15fd9;
       color: #c15fd9;
@@ -468,8 +482,8 @@ form input, form textarea {
           -ms-flex-align: center;
               align-items: center; }
       #main-section .grid-row .col-3:nth-of-type(4) a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:nth-of-type(4) .icon {
       border-color: #74cc3f;
       color: #74cc3f;
@@ -560,8 +574,8 @@ form input, form textarea {
           text-transform: uppercase;
           display: inline-block; }
           #bottom-section .right form input[type="submit"]:hover {
-            border: 1px solid #000000;
-            background: #c0c0c0; }
+            border: 1px solid #000000 !important;
+            background: #c0c0c0 !important; }
   #footer {
     margin-bottom: 10vh;
     background: #2a2d35; }
@@ -840,8 +854,8 @@ form input, form textarea {
         letter-spacing: 0.15vw;
         margin-bottom: 6vh; }
         #intro .left a:hover {
-          border: 1px solid #000000;
-          background: #c0c0c0; } }
+          border: 1px solid #000000 !important;
+          background: #c0c0c0 !important; } }
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #intro {
@@ -860,7 +874,7 @@ form input, form textarea {
 
 @media (min-width: 500px) and (max-width: 1024px) and (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
   #intro {
-    height: 85vh; }
+    height: 88vh; }
     #intro .left {
       padding-bottom: 2%; }
       #intro .left .intro-caption {
@@ -925,8 +939,8 @@ form input, form textarea {
           height: 2.2em;
           font-size: 2.8em; }
           #harvest .vertical-margins .content .right a:hover {
-            border: 1px solid #000000;
-            background: #c0c0c0; } }
+            border: 1px solid #000000 !important;
+            background: #c0c0c0 !important; } }
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #harvest .vertical-margins .content .left h2 {
@@ -1026,8 +1040,8 @@ form input, form textarea {
       height: 3.5vh;
       font-size: 1em; }
       #main-section .grid-row .col-3:first-of-type a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:first-of-type .icon {
       border-color: #2ce6d7;
       color: #2ce6d7;
@@ -1058,8 +1072,8 @@ form input, form textarea {
       height: 3.5vh;
       font-size: 1em; }
       #main-section .grid-row .col-3:nth-of-type(2) a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:nth-of-type(2) .icon {
       border-color: #2ce6d7;
       color: #2ce6d7;
@@ -1092,8 +1106,8 @@ form input, form textarea {
       height: 3.5vh;
       font-size: 1em; }
       #main-section .grid-row .col-3:nth-of-type(3) a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:nth-of-type(3) .icon {
       border-color: #c15fd9;
       color: #c15fd9;
@@ -1124,8 +1138,8 @@ form input, form textarea {
       height: 3.5vh;
       font-size: 1em; }
       #main-section .grid-row .col-3:nth-of-type(4) a:hover {
-        border: 1px solid #000000;
-        background: #c0c0c0; }
+        border: 1px solid #000000 !important;
+        background: #c0c0c0 !important; }
     #main-section .grid-row .col-3:nth-of-type(4) .icon {
       border-color: #74cc3f;
       color: #74cc3f;
@@ -1250,8 +1264,8 @@ form input, form textarea {
         width: 50%;
         text-transform: uppercase; }
         #bottom-section .right form input[type="submit"]:hover {
-          border: 1px solid #000000;
-          background: #c0c0c0; } }
+          border: 1px solid #000000 !important;
+          background: #c0c0c0 !important; } }
 
 @media (min-width: 500px) and (max-width: 1024px) and (orientation: landscape) {
   #bottom-section .left .top.grid-row .col-6 figure.grid-row {
@@ -1497,8 +1511,8 @@ form input, form textarea {
           font-size: 6em;
           letter-spacing: 2px; }
           #intro .vertical-margins .grid-row .left a:hover {
-            border: 1px solid #000000;
-            background: #c0c0c0; }
+            border: 1px solid #000000 !important;
+            background: #c0c0c0 !important; }
         #intro .vertical-margins .grid-row .left p {
           display: none; }
   #harvest {
@@ -1557,8 +1571,8 @@ form input, form textarea {
           height: 30px;
           font-size: 2.5vh; }
           #harvest .vertical-margins .content .right a:hover {
-            border: 1px solid #000000;
-            background: #c0c0c0; }
+            border: 1px solid #000000 !important;
+            background: #c0c0c0 !important; }
   #main-section {
     display: none; }
   #bottom-section {
@@ -1656,8 +1670,8 @@ form input, form textarea {
         font-size: 4em;
         line-height: 15px; }
         #bottom-section .right form input[type="submit"]:hover {
-          border: 1px solid #000000;
-          background: #c0c0c0; }
+          border: 1px solid #000000 !important;
+          background: #c0c0c0 !important; }
   #footer {
     padding: 4vw;
     background: #2a2d35; }

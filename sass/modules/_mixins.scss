@@ -39,8 +39,8 @@
     align-items: center;
 
     &:hover{
-        border: 1px solid  $hover-btn-border-color;
-        background: $hover-btn-color;
+        border: 1px solid  $hover-btn-border-color !important;
+        background: $hover-btn-color !important;
     }
 }
 

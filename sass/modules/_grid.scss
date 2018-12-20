@@ -24,15 +24,15 @@
                     width: 100%;
                     float: left;
                     min-height: 5px;
-                    padding-left: 5px; // gutter
-                    padding-right: 5px; // gutter
+                    padding-left: 5px;      // gutter
+                    padding-right: 5px;     // gutter
                     
                     &:first-child {
-                        padding-left: 0; // gutter
+                        padding-left: 0;    // gutter
                     }
 
                     &:last-child {
-                        padding-right: 0; // gutter
+                        padding-right: 0;   // gutter
                     }
                 }
 
@@ -85,11 +85,11 @@
                         padding: 10px;
 
                         &:nth-child(odd) {
-                            padding-left: 0; // gutter
+                            padding-left: 0;    // gutter
                         }
     
                         &:nth-child(even) {
-                            padding-right: 0; // gutter
+                            padding-right: 0;   // gutter
                         }
                         
                     }

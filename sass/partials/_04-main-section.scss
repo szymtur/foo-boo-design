@@ -11,6 +11,8 @@
          justify-content: space-around;
          align-items: center;
          background: $main-section-container-bg-color;
+         border: 1px solid transparent;
+         transition: all 0.5s;
          text-align: center;
          overflow: hidden;
          padding-left: 1.5vw;
@@ -27,6 +29,7 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 3vh;
+            transition: all 0.5s;
          }
 
          h3 {
@@ -47,6 +50,20 @@
          
          a {
             text-transform: lowercase;
+         }
+
+         &:hover {
+            border: 1px solid $main-section-font-color;
+
+            .icon {
+               color: $main-section-font-color !important;
+               border-color: $main-section-font-color !important;
+            }
+
+            a {
+               background: $main-section-font-color !important;
+               border-color: transparent !important;
+            }
          }
       }
 
