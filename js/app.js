@@ -2,6 +2,9 @@ import '../sass/main.scss';
 import data from '../json/boxes.json';
 import icon from '../graphics/favicon/favicon.png';
 
+//fixing :hover on touchscreen
+(function(l){let i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document);
+
 document.addEventListener("DOMContentLoaded", function(event) {
    insertData();
    scrollTop();
@@ -128,4 +131,3 @@ function changeFavicon(img) {
    favicon.setAttribute('type', 'image/png');
    favicon.setAttribute('href', `images/${img}`);
 }
-
