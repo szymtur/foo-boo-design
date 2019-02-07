@@ -6,7 +6,7 @@
 [https://szymtur.github.io/foo-boo-design](https://szymtur.github.io/foo-boo-design)
 
 ### Description:
-Reflected layout of the website.
+Responsive Web Development Workshop.
 
 ### Technologies used:
 - HTML5
