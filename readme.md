@@ -2,13 +2,13 @@
 
 ![](graphics/layout/layout.png)
 
-###Link:
+### Link:
 [https://szymtur.github.io/foo-boo-design](https://szymtur.github.io/foo-boo-design)
 
-###Description:
+### Description:
 Reflected layout of the website.
 
-###Technologies used:
+### Technologies used:
 - HTML5
 - SASS
 - CSS Grid Layout
@@ -16,5 +16,5 @@ Reflected layout of the website.
 - JavaScript
 - jQuery
 
-###Tools used:
+### Tools used:
 - Webpack
