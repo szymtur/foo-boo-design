@@ -1,41 +1,42 @@
 #intro {
-   position: relative;
-   height: 85vh;
-   background-image: url('../graphics/img/intro_background.jpg');
-   background-size: cover;
-   background-position: top, right;
-   overflow: hidden;
-   
-   .left, .right {
-      height: 85vh;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      
-      .intro-caption {
-         @include image('../graphics/svg/intro_caption.svg');
-         height: 45vh;
-         background-size: 83%;
-         background-position: left;
-      }
+    position: relative;
+    height: 85vh;
+    background-image: url('../graphics/img/intro_background.jpg');
+    background-size: cover;
+    background-position: top, right;
+    overflow: hidden;
 
-      p {
-         width: 83%;
-         font-size: 1.1vw;
-         line-height: 1.5vw;
-         text-align: justify;
-      }
+    .left,
+    .right {
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
 
-      a {
-         @include button($intro-button-color);
-         font-size: 1.3vw;
-         width: 66%;
-         height: 3.5vw;
-         margin-left: 17%;
-         margin-bottom: 2vh;
-         margin-top: 5vh;
-         text-transform: uppercase;
-         letter-spacing: 0.15vw;
-      }
-   }
+        .intro-caption {
+            @include image('../graphics/svg/intro_caption.svg');
+            height: 45vh;
+            background-size: 83%;
+            background-position: left;
+        }
+
+        p {
+            width: 83%;
+            font-size: 1.1vw;
+            line-height: 1.5vw;
+            text-align: justify;
+        }
+
+        a {
+            @include button($intro-button-color);
+            font-size: 1.3vw;
+            width: 66%;
+            height: 3.5vw;
+            margin-left: 17%;
+            margin-bottom: 2vh;
+            margin-top: 5vh;
+            text-transform: uppercase;
+            letter-spacing: 0.15vw;
+        }
+    }
 }

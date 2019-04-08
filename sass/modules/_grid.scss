@@ -4,17 +4,21 @@
         max-width: 1920px;
         margin-left: auto;
         margin-right: auto;
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
+
         .vertical-margins {
             padding-left: 10%;
             padding-right: 10%;
 
             .grid-row {
-                &::after, &::before {
+
+                &::after,
+                &::before {
                     clear: both;
                     display: block;
                     content: '';
@@ -24,20 +28,21 @@
                     width: 100%;
                     float: left;
                     min-height: 5px;
-                    padding-left: 5px;      // gutter
-                    padding-right: 5px;     // gutter
-                    
+                    padding-left: 5px; // gutter
+                    padding-right: 5px; // gutter
+
                     &:first-child {
-                        padding-left: 0;    // gutter
+                        padding-left: 0; // gutter
                     }
 
                     &:last-child {
-                        padding-right: 0;   // gutter
+                        padding-right: 0; // gutter
                     }
                 }
 
                 $col: 100% / $cols;
-                @for $i from 1 to $cols +1 {
+
+                @for $i from 1 to $cols+1 {
                     .col-#{$i} {
                         width: $col * $i;
                     }
@@ -85,13 +90,13 @@
                         padding: 10px;
 
                         &:nth-child(odd) {
-                            padding-left: 0;    // gutter
+                            padding-left: 0; // gutter
                         }
-    
+
                         &:nth-child(even) {
-                            padding-right: 0;   // gutter
+                            padding-right: 0; // gutter
                         }
-                        
+
                     }
                 }
             }

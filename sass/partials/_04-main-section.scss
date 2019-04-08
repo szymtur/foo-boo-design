@@ -1,120 +1,120 @@
 #main-section {
-   background: $main-section-bg-color;
-   color: $main-section-font-color;
-   padding-top: 3vh;
-   padding-bottom: 3vh;
+    background: $main-section-bg-color;
+    color: $main-section-font-color;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 
-   .grid-row {
-      .grid-container {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-         align-items: center;
-         background: $main-section-container-bg-color;
-         border: 1px solid transparent;
-         transition: all 0.5s;
-         text-align: center;
-         overflow: hidden;
-         padding-left: 1.5vw;
-         padding-right: 1.5vw;
-         padding-bottom: 4vh;
-         padding-top: 4vh;
-         
-         .icon {
-            border: 3px solid transparent;
-            border-radius: 50%;
-            width: 8vw;
-            height: 8vw; 
+    .grid-row {
+        .grid-container {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
             align-items: center;
-            margin-bottom: 3vh;
+            background: $main-section-container-bg-color;
+            border: 1px solid transparent;
             transition: all 0.5s;
-         }
-
-         h3 {
-            @include roboto-medium;
-            text-transform: uppercase;
-            height: 1.6vw;
-            width: 115%;
+            text-align: center;
             overflow: hidden;
-            margin-bottom: 3vh;
-         }
-
-         .text {
-            height: 5.2vw;
-            width: 90%;
-            overflow: hidden;
-            margin-bottom: 3vh;
-         }
-         
-         a {
-            text-transform: lowercase;
-         }
-
-         &:hover {
-            border: 1px solid $main-section-font-color;
+            padding-left: 1.5vw;
+            padding-right: 1.5vw;
+            padding-bottom: 4vh;
+            padding-top: 4vh;
 
             .icon {
-               color: $main-section-font-color !important;
-               border-color: $main-section-font-color !important;
+                border: 3px solid transparent;
+                border-radius: 50%;
+                width: 8vw;
+                height: 8vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 3vh;
+                transition: all 0.5s;
+            }
+
+            h3 {
+                @include roboto-medium;
+                text-transform: uppercase;
+                height: 1.6vw;
+                width: 115%;
+                overflow: hidden;
+                margin-bottom: 3vh;
+            }
+
+            .text {
+                height: 5.2vw;
+                width: 90%;
+                overflow: hidden;
+                margin-bottom: 3vh;
             }
 
             a {
-               background: $main-section-font-color !important;
-               border-color: transparent !important;
+                text-transform: lowercase;
             }
-         }
-      }
 
-      .col-3:first-of-type {
-         a {
-            @include button($main-section-btn-1-color);
-         }
+            &:hover {
+                border: 1px solid $main-section-font-color;
 
-         .icon {
-            border-color: $main-section-icon-1-color;
-            color: $main-section-icon-1-color;
-            font-size: 4.5vw;
-         }
+                .icon {
+                    color: $main-section-font-color !important;
+                    border-color: $main-section-font-color !important;
+                }
 
-      }
+                a {
+                    background: $main-section-font-color !important;
+                    border-color: transparent !important;
+                }
+            }
+        }
 
-      .col-3:nth-of-type(2){ 
-         a {
-            @include button($main-section-btn-2-color);
-         }
+        .col-3:first-of-type {
+            a {
+                @include button($main-section-btn-1-color);
+            }
 
-         .icon {
-            border-color: $main-section-icon-2-color;
-            color: $main-section-icon-2-color;
-            font-size: 4vw;
-            transform: rotate(-45deg);
-         }
-      }
+            .icon {
+                border-color: $main-section-icon-1-color;
+                color: $main-section-icon-1-color;
+                font-size: 4.5vw;
+            }
 
-      .col-3:nth-of-type(3){
-         a {
-            @include button($main-section-btn-3-color);
-         }
+        }
 
-         .icon {
-            border-color: $main-section-icon-3-color;
-            color: $main-section-icon-3-color;
-            font-size: 4.5vw;
-         }
-      }
+        .col-3:nth-of-type(2) {
+            a {
+                @include button($main-section-btn-2-color);
+            }
 
-      .col-3:nth-of-type(4){ 
-         a {
-            @include button($main-section-btn-4-color);
-         }
+            .icon {
+                border-color: $main-section-icon-2-color;
+                color: $main-section-icon-2-color;
+                font-size: 4vw;
+                transform: rotate(-45deg);
+            }
+        }
 
-         .icon {
-            border-color: $main-section-icon-4-color;
-            color: $main-section-icon-4-color;
-            font-size: 3.5vw;
-         }
-      }
-   }
+        .col-3:nth-of-type(3) {
+            a {
+                @include button($main-section-btn-3-color);
+            }
+
+            .icon {
+                border-color: $main-section-icon-3-color;
+                color: $main-section-icon-3-color;
+                font-size: 4.5vw;
+            }
+        }
+
+        .col-3:nth-of-type(4) {
+            a {
+                @include button($main-section-btn-4-color);
+            }
+
+            .icon {
+                border-color: $main-section-icon-4-color;
+                color: $main-section-icon-4-color;
+                font-size: 3.5vw;
+            }
+        }
+    }
 }

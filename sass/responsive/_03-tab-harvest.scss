@@ -1,81 +1,81 @@
 #harvest {
-   background: $harvest-content-bg-color;
-   padding-top: 2vh;
-   padding-bottom: 4vh;
+    background: $harvest-content-bg-color;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
 
-   .vertical-margins {
-      .content {
-         color: $harvest-header-color;
-         overflow: hidden;
-         
-         .left {
-            h2 {
-               @include roboto-medium;
-               font-size: 3.5em;
-               margin-bottom: 1em;
-               line-height: 5vh;
-            }
+    .vertical-margins {
+        .content {
+            color: $harvest-header-color;
+            overflow: hidden;
 
-            p {
-               color: $harvest-font-color;
-               font-size: 2em;
-               line-height: 1.5em;
-               text-align: justify;
-               margin-bottom: 2em;
-            }
-         }
-
-         .right {
-            display: flex;
-            justify-content: center;
-
-            a {
-               @include button($harvest-button-color);
-               @include roboto-light;
-               text-transform: uppercase;
-               width: 50%;
-               height: 2.2em;
-               font-size: 2.8em;
-            }
-         }
-      }
-   }
-}
- 
-
-@media (orientation: landscape) {
-   #harvest {
-      .vertical-margins {
-         .content {
             .left {
-               h2 {
-                  margin-top: 4vh;
-               }
+                h2 {
+                    @include roboto-medium;
+                    font-size: 3.5em;
+                    margin-bottom: 1em;
+                    line-height: 5vh;
+                }
+
+                p {
+                    color: $harvest-font-color;
+                    font-size: 2em;
+                    line-height: 1.5em;
+                    text-align: justify;
+                    margin-bottom: 2em;
+                }
             }
 
             .right {
-               a {
-                  font-size: 2.8em;
-                  height: 8vh;
-               }
+                display: flex;
+                justify-content: center;
+
+                a {
+                    @include button($harvest-button-color);
+                    @include roboto-light;
+                    text-transform: uppercase;
+                    width: 50%;
+                    height: 2.2em;
+                    font-size: 2.8em;
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }
 
 
-@media  (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
-   #harvest {
-      .vertical-margins {
-         .content {
-            .left {
-               h2 {
-                  margin-top: 5vh;
-                  margin-bottom: 5vh;
-               }
+@media (orientation: landscape) {
+    #harvest {
+        .vertical-margins {
+            .content {
+                .left {
+                    h2 {
+                        margin-top: 4vh;
+                    }
+                }
+
+                .right {
+                    a {
+                        font-size: 2.8em;
+                        height: 8vh;
+                    }
+                }
             }
-         }
-      }
-   }
+        }
+    }
+}
+
+
+@media (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
+    #harvest {
+        .vertical-margins {
+            .content {
+                .left {
+                    h2 {
+                        margin-top: 5vh;
+                        margin-bottom: 5vh;
+                    }
+                }
+            }
+        }
+    }
 }

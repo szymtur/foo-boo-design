@@ -1,11 +1,11 @@
 @mixin roboto-regular {
-   font-family: 'Roboto', sans-serif;
-   font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 @mixin roboto-medium {
-   font-family: 'Roboto', sans-serif;
-   font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
 }
 
 @mixin roboto-light {
@@ -38,8 +38,8 @@
     justify-content: center;
     align-items: center;
 
-    &:hover{
-        border: 1px solid  $hover-btn-border-color !important;
+    &:hover {
+        border: 1px solid $hover-btn-border-color !important;
         background: $hover-btn-color !important;
     }
 }
@@ -54,9 +54,9 @@
     height: 7vh;
 }
 
-@mixin button-tab-submit ($height, $font-size){
+@mixin button-tab-submit ($height, $font-size) {
     height: $height;
-    font-size: $font-size;     
+    font-size: $font-size;
 }
 
 @mixin image($link) {

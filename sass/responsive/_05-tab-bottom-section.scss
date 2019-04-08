@@ -1,149 +1,152 @@
 #bottom-section {
-   background: $main-section-bg-color;
-   color: $main-section-font-color;
-   font-size: 2.5em;
-   line-height: 1.5em;
-   text-align: justify;
-   overflow: hidden;
+    background: $main-section-bg-color;
+    color: $main-section-font-color;
+    font-size: 2.5em;
+    line-height: 1.5em;
+    text-align: justify;
+    overflow: hidden;
 
-   h5 {
-      @include roboto-light;
-      font-size: 1.3em;   
-      text-transform: uppercase;
-      margin-bottom: 1vh;
-   }
+    h5 {
+        @include roboto-light;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        margin-bottom: 1vh;
+    }
 
-   h4 {
-      @include roboto-bold;
-      font-size: 1.9em;
-      text-transform: uppercase;
-      margin-bottom: 2vh;
-   }
-   
-   span {
-      @include roboto-bold;
-   }
+    h4 {
+        @include roboto-bold;
+        font-size: 1.9em;
+        text-transform: uppercase;
+        margin-bottom: 2vh;
+    }
 
-   .left {
-      background: $main-section-container-bg-color;
+    span {
+        @include roboto-bold;
+    }
 
-      .top.grid-row {
-         .col-6 {
-            figure.grid-row {
-               height: 35vh;
-               background-image: url('../graphics/img/article_img.jpg');
-               background-size: cover;
-               background-position: bottom;
+    .left {
+        background: $main-section-container-bg-color;
+
+        .top.grid-row {
+            .col-6 {
+                figure.grid-row {
+                    height: 35vh;
+                    background-image: url('../graphics/img/article_img.jpg');
+                    background-size: cover;
+                    background-position: bottom;
+                }
             }
-         }
 
-         .col-6 {
-            .description.grid-row {
-               padding-top: 3vh;
-               padding-bottom: 2vh;
-               padding-left: 2vw;
-               padding-right: 2vw; 
-               overflow: hidden;
+            .col-6 {
+                .description.grid-row {
+                    padding-top: 3vh;
+                    padding-bottom: 2vh;
+                    padding-left: 2vw;
+                    padding-right: 2vw;
+                    overflow: hidden;
+                }
             }
-         }
-      }
+        }
 
-      .bottom.grid-row {
-         padding-left: 2vw;
-         padding-right: 2vw; 
-         padding-bottom: 4vh;
+        .bottom.grid-row {
+            padding-left: 2vw;
+            padding-right: 2vw;
+            padding-bottom: 4vh;
 
-         overflow: hidden;   
-      }
-   }
+            overflow: hidden;
+        }
+    }
 
-   .right {
-      padding-top: 3em;
-      padding-bottom: 2em;
+    .right {
+        padding-top: 3em;
+        padding-bottom: 2em;
 
-      form {
-         input {
-            height: 2.5em;
-         }
+        form {
+            input {
+                height: 2.5em;
+            }
 
-         textarea {
-            height: 10em;
-            resize: none;
-         }
+            textarea {
+                height: 10em;
+                resize: none;
+            }
 
-         input, textarea {
-            margin-bottom: 0.8em;
-            width: 100%;
-            @include roboto-light;
-            border-radius: 0;
-            border: 1px solid $input-border-color;
-         }
+            input,
+            textarea {
+                margin-bottom: 0.8em;
+                width: 100%;
+                @include roboto-light;
+                border-radius: 0;
+                border: 1px solid $input-border-color;
+            }
 
-         input:not([type="submit"]), textarea {
-            padding: 1em;
-            font-size: 1em;
-         }
+            input:not([type="submit"]),
+            textarea {
+                padding: 1em;
+                font-size: 1em;
+            }
 
-         input:not([type="submit"]):focus, textarea:focus {
-            border: 1px solid $main-section-font-color;
-            outline: none;           
-         }
+            input:not([type="submit"]):focus,
+            textarea:focus {
+                border: 1px solid $main-section-font-color;
+                outline: none;
+            }
 
-         input[type="submit"] {
-            @include button($form-button-color);
-            @include button-tab-submit(2.5em, 1em);
-            width: 50%;
-            text-transform: uppercase;
-         }
-      }
-   }
+            input[type="submit"] {
+                @include button($form-button-color);
+                @include button-tab-submit(2.5em, 1em);
+                width: 50%;
+                text-transform: uppercase;
+            }
+        }
+    }
 }
 
 
 @media (orientation: landscape) {
-   #bottom-section {
-      .left {
-         .top.grid-row {
-            .col-6 {
-               figure.grid-row {
-                  height: 75vh;
-               }
+    #bottom-section {
+        .left {
+            .top.grid-row {
+                .col-6 {
+                    figure.grid-row {
+                        height: 75vh;
+                    }
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }
 
 
 @media (min-height: 481px) and (max-height: 768px) and (orientation: landscape) {
-   #bottom-section {
-      .left {
-         .top.grid-row {
-            .col-6 {
-               figure.grid-row {
-                  height: 60vh;
-               }
+    #bottom-section {
+        .left {
+            .top.grid-row {
+                .col-6 {
+                    figure.grid-row {
+                        height: 60vh;
+                    }
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }
 
 
 @media (min-height: 300px) and (max-height: 480px) and (orientation: landscape) {
-   #bottom-section {
-      h4 {
-         margin-bottom: 4vh;
-      }
+    #bottom-section {
+        h4 {
+            margin-bottom: 4vh;
+        }
 
-      .left {
-         .top.grid-row {
-            .col-6 {
-               figure.grid-row {
-                  height: 80vh;
-               }
+        .left {
+            .top.grid-row {
+                .col-6 {
+                    figure.grid-row {
+                        height: 80vh;
+                    }
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }

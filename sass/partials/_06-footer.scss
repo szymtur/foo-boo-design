@@ -1,92 +1,92 @@
 #footer {
-   margin-bottom: 10vh;
-   background: $footer-bg-color;
+    margin-bottom: 10vh;
+    background: $footer-bg-color;
 
+    .col-2,
+    .col-3 {
+        height: 35vh;
+    }
 
-   .col-2, .col-3 {
-      height: 35vh;
-   }
+    h6 {
+        @include roboto-regular;
+        font-size: 1.1vw;
+        margin-bottom: 0.5vw;
+    }
 
-   h6 {
-      @include roboto-regular;
-      font-size: 1.1vw;
-      margin-bottom: 0.5vw;
-   }
+    .li-el {
+        @include roboto-light;
+        font-size: 0.85vw;
+        line-height: 1.5vw;
+        margin-left: 0.5vw;
+        ;
+        width: 120%;
+        height: 1.5vw;
+        overflow: hidden;
 
-   .li-el {
-      @include roboto-light;
-      font-size: 0.85vw;
-      line-height: 1.5vw;
-      margin-left: 0.5vw;;
-      width: 120%;
-      height: 1.5vw;
-      overflow: hidden;
+        .fa {
+            margin-right: 0.5vw;
+            color: $footer-li-dot-color;
+        }
+    }
 
-      .fa {
-         margin-right: 0.5vw;
-         color: $footer-li-dot-color;
-      }
-   }
+    .about-us,
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        overflow: hidden;
+    }
 
-   .about-us, .about {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      overflow: hidden;
-   }
+    .about {
+        align-items: center;
 
-   .about {
-      align-items: center;
+        .whats-wrong {
+            margin-top: 1vw;
+        }
+    }
 
-      .whats-wrong {
-         margin-top: 1vw;
-      }
-   }
+    .center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-   .center {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      
-      .logo-bottom {
-         @include image('../graphics/svg/fooboo_logo.svg');
-         height: 6vw;
-         width: 10vw;
-      }
-   }
+        .logo-bottom {
+            @include image('../graphics/svg/fooboo_logo.svg');
+            height: 6vw;
+            width: 10vw;
+        }
+    }
 
-   .social-icons {
-      text-align: right;
-      padding-top: 2vw;
-      
-      .icon {
-         width: 2.5vw;
-         height: 2.5vw;
-         border: 1px solid white;
-         border-radius: 50%;
-         background: $social-icons-bg-color;
-         text-align: center;
-         display: inline-block;
-         margin-left: 0.75vw;
-         transition: all 0.5s;
+    .social-icons {
+        text-align: right;
+        padding-top: 2vw;
 
-         .fab {
-            font-size: 1.3vw;
-            color: white;
-            line-height: 2.3vw;
-         }
-
-         &:hover{
-            background: white;
-            color: $social-icons-bg-color;
-            transform: rotate(360deg);
+        .icon {
+            width: 2.5vw;
+            height: 2.5vw;
+            border: 1px solid white;
+            border-radius: 50%;
+            background: $social-icons-bg-color;
+            text-align: center;
+            display: inline-block;
+            margin-left: 0.75vw;
+            transition: all 0.5s;
 
             .fab {
-               color: $social-icons-bg-color;
+                font-size: 1.3vw;
+                color: white;
+                line-height: 2.3vw;
             }
-         }
-      }
-   }
+
+            &:hover {
+                background: white;
+                color: $social-icons-bg-color;
+                transform: rotate(360deg);
+
+                .fab {
+                    color: $social-icons-bg-color;
+                }
+            }
+        }
+    }
 }
-
-

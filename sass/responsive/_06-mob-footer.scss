@@ -1,64 +1,64 @@
 #footer {
-   padding: 4vw;
-   background: $footer-bg-color;
+    padding: 4vw;
+    background: $footer-bg-color;
 
-   .vertical-margins > .grid-row {
-      display: flex;
-      flex-direction: column-reverse;
-      justify-content: center;
+    .vertical-margins>.grid-row {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
 
-      .about-us, .about, .col-1 {
-         display: none;
-      } 
-      
-      .center {
-         display: flex;
-         justify-content: center;
-         
-         .logo-bottom {
-            @include image('../graphics/svg/fooboo_logo.svg');
-            width: 40vw;
-            height: 20vh;
-         }
-      }
+        .about-us,
+        .about,
+        .col-1 {
+            display: none;
+        }
 
-      .social-icons {
-         text-align: center;
-         padding-top: 2vw;
-         padding-bottom: 2vw;
-         
-         .icon {
-            width: 45px;
-            height: 45px;
-            border: 1px solid white;
-            border-radius: 50%;
-            background: $social-icons-bg-color;
-            display: inline-block;
-            transition: all 0.5s;
-            position: relative;
-            margin: 5px;
+        .center {
+            display: flex;
+            justify-content: center;
 
-            .fab {
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%, -50%);
-               font-size: 20px;
-               color: white;
+            .logo-bottom {
+                @include image('../graphics/svg/fooboo_logo.svg');
+                width: 40vw;
+                height: 20vh;
             }
-   
-            &:hover{
-               background: white;
-               color: $social-icons-bg-color;
-               transform: rotate(360deg);
-   
-               .fab {
-                  color: $social-icons-bg-color;
-               }
+        }
+
+        .social-icons {
+            text-align: center;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+
+            .icon {
+                width: 45px;
+                height: 45px;
+                border: 1px solid white;
+                border-radius: 50%;
+                background: $social-icons-bg-color;
+                display: inline-block;
+                transition: all 0.5s;
+                position: relative;
+                margin: 5px;
+
+                .fab {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 20px;
+                    color: white;
+                }
+
+                &:hover {
+                    background: white;
+                    color: $social-icons-bg-color;
+                    transform: rotate(360deg);
+
+                    .fab {
+                        color: $social-icons-bg-color;
+                    }
+                }
             }
-         }
-      }
-   }
+        }
+    }
 }
-
-
